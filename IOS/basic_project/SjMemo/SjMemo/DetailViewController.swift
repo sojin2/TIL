@@ -9,6 +9,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var memoTableView: UITableView!
     var memo: Memo? //이전화면에서 전달한 메모 저장
     
     let formatter: DateFormatter = { //원하는 포맷으로 날짜 출력하기위해 설정
@@ -19,10 +20,28 @@ class DetailViewController: UIViewController {
         return f
     } ()
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination.children.first as? ComposeViewController {
+            vc.editTarget = memo
+        }
+    }
+    
+    var token: NSObjectProtocol?
+    
+    deinit {
+        if let token = token {
+            NotificationCenter.default.removeObserver(token)
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        token = NotificationCenter.default.addObserver(forName: ComposeViewController.memoDidChange, object: nil, queue: OperationQueue.main, using: { [weak self] (noti) in
+            self?.memoTableView.reloadData()
+        })
     }
     
 
