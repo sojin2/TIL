@@ -12,6 +12,7 @@
 		AA82F1C8256AE67400D1DEA1 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA82F1C7256AE67400D1DEA1 /* ComposeViewController.swift */; };
 		AA868089256C0957006B834C /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA868088256C0957006B834C /* UIViewController+Alert.swift */; };
 		AA86808C256C4544006B834C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA86808B256C4544006B834C /* DetailViewController.swift */; };
+		AA868092256D5617006B834C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA868091256D5617006B834C /* DataManager.swift */; };
 		AAEA761E256A98FF004B34E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA761D256A98FF004B34E0 /* AppDelegate.swift */; };
 		AAEA7620256A98FF004B34E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEA761F256A98FF004B34E0 /* SceneDelegate.swift */; };
 		AAEA7625256A98FF004B34E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAEA7623256A98FF004B34E0 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		AA82F1C7256AE67400D1DEA1 /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		AA868088256C0957006B834C /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		AA86808B256C4544006B834C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		AA868091256D5617006B834C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = ../../../../../../../../Documents/DataManager.swift; sourceTree = "<group>"; };
 		AAEA761A256A98FF004B34E0 /* SjMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SjMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAEA761D256A98FF004B34E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAEA761F256A98FF004B34E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +57,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		AA86808F256D53B3006B834C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AA868091256D5617006B834C /* DataManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		AAEA7611256A98FF004B34E0 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +84,7 @@
 		AAEA761C256A98FF004B34E0 /* SjMemo */ = {
 			isa = PBXGroup;
 			children = (
+				AA86808F256D53B3006B834C /* Data */,
 				AA82F1C0256AC16000D1DEA1 /* Model */,
 				AAEA761D256A98FF004B34E0 /* AppDelegate.swift */,
 				AAEA761F256A98FF004B34E0 /* SceneDelegate.swift */,
@@ -167,6 +178,7 @@
 				AAEA7620256A98FF004B34E0 /* SceneDelegate.swift in Sources */,
 				AA82F1C2256AC18E00D1DEA1 /* Model.swift in Sources */,
 				AA868089256C0957006B834C /* UIViewController+Alert.swift in Sources */,
+				AA868092256D5617006B834C /* DataManager.swift in Sources */,
 				AA86808C256C4544006B834C /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
