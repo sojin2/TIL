@@ -18,10 +18,10 @@
 [App Icon Maker](https://appiconmaker.co/)
 
 # 사이트
-[IOS 개발자가 되기 위한 로드맵](https://github.com/BohdanOrlov/iOS-Developer-Roadmap)
-(https://github.com/godrm/mobile-developer-roadmap)
-[BAEKJOON](https://www.acmicpc.net/)
-[codeup](https://codeup.kr/problemset.php)
-[다른 분이 모은 사이트1](https://github.com/2jae6/iOS-Site-Collection)
-[다른 분이 모은 사이트2](https://github.com/ClintJang/awesome-swift-korean-lecture/blob/master/README.md)
+*[IOS 개발자가 되기 위한 로드맵](https://github.com/BohdanOrlov/iOS-Developer-Roadmap)
+*[IOS 개발자가 되기 위한 로드맵](https://github.com/godrm/mobile-developer-roadmap)
+*[BAEKJOON](https://www.acmicpc.net/)
+*[codeup](https://codeup.kr/problemset.php)
+*[다른 분이 모은 사이트1](https://github.com/2jae6/iOS-Site-Collection)
+*[다른 분이 모은 사이트2](https://github.com/ClintJang/awesome-swift-korean-lecture/blob/master/README.md)
 
