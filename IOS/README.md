@@ -1,9 +1,9 @@
 # IOS 기초 개발 공부 사이트
-[100일 공부](https://www.hackingwithswift.com/100)
-[네이버 edwith](https://www.edwith.org/)
-[inflearn](https://www.inflearn.com/)
-[튜토리얼 및 해외 강의](https://www.raywenderlich.com/ios)
-[참고 블로그](https://the-brain-of-sic2.tistory.com/)
+ * [100일 공부](https://www.hackingwithswift.com/100)
+ * [네이버 edwith](https://www.edwith.org/)
+ * [inflearn](https://www.inflearn.com/)
+ * [튜토리얼 및 해외 강의](https://www.raywenderlich.com/ios)
+ * [참고 블로그](https://the-brain-of-sic2.tistory.com/)
 
 # IOS
 
@@ -18,10 +18,10 @@
 [App Icon Maker](https://appiconmaker.co/)
 
 # 사이트
-*[IOS 개발자가 되기 위한 로드맵](https://github.com/BohdanOrlov/iOS-Developer-Roadmap)
-*[IOS 개발자가 되기 위한 로드맵](https://github.com/godrm/mobile-developer-roadmap)
-*[BAEKJOON](https://www.acmicpc.net/)
-*[codeup](https://codeup.kr/problemset.php)
-*[다른 분이 모은 사이트1](https://github.com/2jae6/iOS-Site-Collection)
-*[다른 분이 모은 사이트2](https://github.com/ClintJang/awesome-swift-korean-lecture/blob/master/README.md)
+ * [IOS 개발자가 되기 위한 로드맵](https://github.com/BohdanOrlov/iOS-Developer-Roadmap)
+ * [IOS 개발자가 되기 위한 로드맵](https://github.com/godrm/mobile-developer-roadmap)
+ * [BAEKJOON](https://www.acmicpc.net/)
+ * [codeup](https://codeup.kr/problemset.php)
+ * [다른 분이 모은 사이트1](https://github.com/2jae6/iOS-Site-Collection)
+ * [다른 분이 모은 사이트2](https://github.com/ClintJang/awesome-swift-korean-lecture/blob/master/README.md)
 
