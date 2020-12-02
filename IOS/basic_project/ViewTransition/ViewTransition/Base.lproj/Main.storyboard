@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mmE-hs-KkW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mmE-hs-KkW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,68 +24,38 @@
                                     <segue destination="cuc-gi-7wB" kind="show" id="PVp-Op-CY6"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YH3-qk-ntB">
-                                <rect key="frame" x="19" y="448" width="382" height="366.5"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이름을 입력해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f7M-uR-kTP">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="나이를 입력해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nux-b4-Zcl">
-                                        <rect key="frame" x="0.0" y="42" width="382" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJE-qZ-BSD">
-                                        <rect key="frame" x="0.0" y="84" width="382" height="30"/>
-                                        <state key="normal" title="사진 선택하기"/>
-                                        <connections>
-                                            <action selector="touchUpSelectImageButtonWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BS4-xx-3ar"/>
-                                        </connections>
-                                    </button>
-                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="9Li-cO-Qew">
-                                        <rect key="frame" x="0.0" y="122" width="382" height="216"/>
-                                    </datePicker>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQy-Vr-g8x">
-                                        <rect key="frame" x="0.0" y="346" width="382" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35h-l5-b3g">
                                 <rect key="frame" x="191" y="99" width="207" height="30"/>
                                 <state key="normal" title="Set Data to Singleton instance"/>
                                 <connections>
-                                    <action selector="touchUpSetButtonWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FcM-1W-Sjq"/>
+                                    <action selector="touchUpSetButtonWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LXl-Sd-zti"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tuC-Ov-7V9">
-                                <rect key="frame" x="16" y="168" width="382" height="234"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이름을 입력해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f7M-uR-kTP">
+                                <rect key="frame" x="16" y="196" width="382" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="나이를 입력해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nux-b4-Zcl">
+                                <rect key="frame" x="20" y="252" width="382" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="YH3-qk-ntB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0DU-DX-iCH"/>
                             <constraint firstItem="ci2-N9-Ann" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="11" id="7fX-kk-rsr"/>
                             <constraint firstItem="ci2-N9-Ann" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="19" id="Nhb-d1-7kN"/>
-                            <constraint firstItem="YH3-qk-ntB" firstAttribute="top" secondItem="35h-l5-b3g" secondAttribute="bottom" constant="20" id="R6f-mC-5y2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="35h-l5-b3g" secondAttribute="trailing" constant="16" id="Y5c-9T-fYo"/>
                             <constraint firstItem="35h-l5-b3g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="11" id="Yj2-lY-JqF"/>
-                            <constraint firstItem="YH3-qk-ntB" firstAttribute="top" secondItem="ci2-N9-Ann" secondAttribute="bottom" constant="20" id="aPz-QQ-E7H"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YH3-qk-ntB" secondAttribute="trailing" constant="16" id="aWX-e6-Ghj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bOb-eL-CGf"/>
                     <connections>
                         <outlet property="ageField" destination="Nux-b4-Zcl" id="1iZ-cU-77m"/>
-                        <outlet property="dateLabel" destination="DQy-Vr-g8x" id="JcZ-SJ-Kuw"/>
-                        <outlet property="datePicker" destination="9Li-cO-Qew" id="mEb-3P-db3"/>
-                        <outlet property="imageView" destination="tuC-Ov-7V9" id="vb0-Px-z1a"/>
                         <outlet property="nameField" destination="f7M-uR-kTP" id="M1X-zk-jWM"/>
                     </connections>
                 </viewController>

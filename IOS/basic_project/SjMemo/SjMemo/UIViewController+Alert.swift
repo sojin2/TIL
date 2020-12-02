@@ -7,7 +7,8 @@
 
 import UIKit
 
-extension UIViewController {
+//경고창을 만드는 메소드
+extension UIViewController { //UIViewController를 상속하는 모든 클래스에서 우리가 구현한 메소드를 상속할 수 있도록 extension으로 선언
     func alert(title: String = "알림", message: String) {
         let alert  = UIAlertController(title: title, message: message, preferredStyle: .alert)
         

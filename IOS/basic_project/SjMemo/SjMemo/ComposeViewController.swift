@@ -11,20 +11,26 @@ class ComposeViewController: UIViewController {
     
     var editTarget: Memo? //보기 화면에서 편집버튼을 누르면 전달한 메모가 이 속성에서 저장
     var originalMemoContent: String? //편집 이전의 메모 내용
+  
     
+    //cancel 버튼을 누르면 close 됨
     @IBAction func close(_ sender: Any) {
         
         dismiss(animated: true, completion: nil)
         
     }
     
+
+    //TextView에 접근하기위한 코드(TextView에 입력되어있는 메모를 가져와야 함)
     @IBOutlet var memoTextView: UITextView!
     
+    
+    // 메모 저장
     @IBAction func save(_ sender: Any) {
         
         guard let memo = memoTextView.text,
-              memo.count > 0 else {
-             // 경고창 표시
+              memo.count > 0 else { //실제 메모를 입력한 경우에만 returen하도록 함
+             // 나머지 경우에서는(메모가 없을 경우) 경고창 표시
             alert(message: "메모를 입력하세요")
             return
         }

@@ -11,7 +11,7 @@ import CoreData
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow? 
+    var window: UIWindow? //13에 맞춰서 되어있기때문에 12이하 버전에서는 검정색 창만 뜨는 문제가 발생함. 그때 이 코드를 추가하면 문제 해결 됨
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
