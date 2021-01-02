@@ -91,6 +91,89 @@ let jina:Student = Student()
 jina.selfIntroduce()//저는 Swift반 unknown입니다.
 
 
+//
+//struct Point {
+//var x = 0
+//var y = 0
+//
+//// 컴파일 에러남.
+//func moveTo(x: Int, y: Int) {
+//    self.x = x
+//    self.y = y
+//  }
+//
+//// 정상 실행
+//mutating func moveTo2(x: Int, y: Int) {
+//    self.x = x
+//    self.y = y
+//  }
+//
+//}
 
 
 
+
+protocol FuelPumpDelegate {
+    func lackFuel()
+    func fullFuel()
+}
+
+class FuelPump {
+    var maxGage: Double = 100.0
+    var delegate: FuelPumpDelegate? = nil
+    
+    var fuelGage: Double {
+        didSet {
+            if oldValue < 10 {
+                // 연료가 부족해지면 델리게이트의 lackFule 메소드를 호출한다.
+                self.delegate?.lackFuel()
+            } else if oldValue == self.maxGage {
+                // 연료가 가득차면 델리게이트의 fullFuel 메소드를 호출한다.
+                self.delegate?.fullFuel()
+            }
+        }
+    }
+    
+    init(fuelGage: Double = 0) {
+        self.fuelGage = fuelGage
+    }
+    
+    // 연료펌프를 가동한다.
+    func startPump( ) {
+        while (true) {
+            if (self.fuelGage > 0) {
+                self.jetFuel()
+            } else {
+                break
+            }
+        }
+    }
+    
+    // 연료를 엔진에 분사한다. 분사할 때마다 연료 게이지의 눈금은 내려간다.
+    func jetFuel( ) {
+        self.fuelGage -= 1
+    }
+}
+
+class Car : FuelPumpDelegate {
+    var fuelPump = FuelPump(fuelGage: 100)
+    
+    init() {
+        self.fuelPump.delegate = self
+    }
+    
+    // fulePump가 호출하는 메소드입니다.
+    func lackFuel() {
+        // 연료를 보충한다.
+    }
+    
+    // fulePump가 호출하는 메소드 입니다.
+    func fullFuel() {
+        // 연료 보충을 중단한다.
+    }
+    
+    // 자동차에 시동을 겁니다.
+    func start() {
+        fuelPump.startPump()
+    }
+}

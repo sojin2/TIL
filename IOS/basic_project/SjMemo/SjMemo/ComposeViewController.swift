@@ -20,6 +20,9 @@ class ComposeViewController: UIViewController {
         
     }
     
+    
+    
+    
 
     //TextView에 접근하기위한 코드(TextView에 입력되어있는 메모를 가져와야 함)
     @IBOutlet var memoTextView: UITextView!
