@@ -10,9 +10,9 @@
 
 
 # YouTube 강의
- *[KxCoding](https://www.youtube.com/channel/UCtVacbJccQlQL_FP5XSEQMQ/featured)
  * [T 아카데미](https://www.youtube.com/watch?v=VJivCns4TAI)
  * [하울의 코딩 채널(IOS Library(Swift)](https://www.youtube.com/playlist?list=PLmdU__e_zPf-uiDtI84Gv9SxFicrbw4KV) 
+ * [KxCoding](https://www.youtube.com/channel/UCtVacbJccQlQL_FP5XSEQMQ/featured)
  
  
 # 유료 강의
@@ -35,4 +35,4 @@
  * [IOS 개발자가 되기 위한 로드맵](https://github.com/godrm/mobile-developer-roadmap)
  * [BAEKJOON](https://www.acmicpc.net/)
  * [codeup](https://codeup.kr/problemset.php)
-
+ * [goormlevel](https://level.goorm.io)
