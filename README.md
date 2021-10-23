@@ -19,7 +19,7 @@
 
 
 ## Swift
-[Type inference & annotation](./Swift/Type inference & annotation.md)   
+[Type_inference&annotation](./Swift/Type inference & annotation.md)   
 [Optional](./Swift/Optional/Optional.md)   
 [Function](./Swift/Function/Function.md)   
 [Closure](./Swift/Closure/Closure.md)   
