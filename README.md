@@ -11,7 +11,7 @@
 
 
 ## 유용한 사이트
--  ICON
+ICON
   - [App Icon Maker](https://appiconmaker.co/)
   - [Apple Symbols 모음](https://developer.apple.com/sf-symbols/)   
   - [이미지를 사이즈별로 편집해주는 사이트](https://appicon.co)
