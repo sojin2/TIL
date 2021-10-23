@@ -11,7 +11,7 @@
 
 
 ## 유용한 사이트
--  ICON
+ICON
   - [App Icon Maker](https://appiconmaker.co/)
   - [Apple Symbols 모음](https://developer.apple.com/sf-symbols/)   
   - [이미지를 사이즈별로 편집해주는 사이트](https://appicon.co)
@@ -19,7 +19,7 @@
 
 
 ## Swift
-[Type_inference&annotation](./Swift/Type inference & annotation.md)   
+[Type inference & annotation](./Swift/Type_inference&annotation.md)   
 [Optional](./Swift/Optional/Optional.md)   
 [Function](./Swift/Function/Function.md)   
 [Closure](./Swift/Closure/Closure.md)   
