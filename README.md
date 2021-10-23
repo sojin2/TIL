@@ -12,16 +12,14 @@
 
 유용한 사이트
 -  ICON
-  - Apple Symbols 모음 : https://developer.apple.com/sf-symbols/   
-  - 이미지를 사이즈별로 편집해주는 사이트 : https://appicon.co
+  - [App Icon Maker](https://appiconmaker.co/)  Cancel changes
+  - [Apple Symbols 모음](https://developer.apple.com/sf-symbols/)   
+  - [이미지를 사이즈별로 편집해주는 사이트](https://appicon.co)
 
 
 
 ## Swift
-[Optional](./Swift/Optional/Optional.md)
-[Function](./Swift/Function/Function.md)
-[Closure](./Swift/Closure/Closure.md)
-
-
-
-## Git
+[Type inference & annotation](./Swift/Type inference & annotation.md)   
+[Optional](./Swift/Optional/Optional.md)   
+[Function](./Swift/Function/Function.md)   
+[Closure](./Swift/Closure/Closure.md)   
