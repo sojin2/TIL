@@ -10,9 +10,9 @@
 - 더 자세한 설명이 필요할때는 블로그에 포스팅합니다. [지니의 개발 창고](https://coding-sojin2.tistory.com/)
 
 
-유용한 사이트
+## 유용한 사이트
 -  ICON
-  - [App Icon Maker](https://appiconmaker.co/)  Cancel changes
+  - [App Icon Maker](https://appiconmaker.co/)
   - [Apple Symbols 모음](https://developer.apple.com/sf-symbols/)   
   - [이미지를 사이즈별로 편집해주는 사이트](https://appicon.co)
 
