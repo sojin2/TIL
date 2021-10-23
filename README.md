@@ -9,6 +9,17 @@
 - 짧고 간결하며 핵심적인 문장을 사용합니다.
 - 더 자세한 설명이 필요할때는 블로그에 포스팅합니다. [지니의 개발 창고](https://coding-sojin2.tistory.com/)
 
-## Swift
 
-## Git
+## 유용한 사이트
+-  ICON
+  - [App Icon Maker](https://appiconmaker.co/)
+  - [Apple Symbols 모음](https://developer.apple.com/sf-symbols/)   
+  - [이미지를 사이즈별로 편집해주는 사이트](https://appicon.co)
+
+
+
+## Swift
+[Type_inference&annotation](./Swift/Type inference & annotation.md)   
+[Optional](./Swift/Optional/Optional.md)   
+[Function](./Swift/Function/Function.md)   
+[Closure](./Swift/Closure/Closure.md)   
