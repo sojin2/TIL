@@ -34,6 +34,62 @@ class VideoMode {
 var res = Resolution()
 res.width
 
+class Counter {
+    var count = 0
+    
+    func increment() {
+        self.count += 1
+    }
+    
+    func incrementBy(amount: Int) {
+        self.count += amount
+    }
+    
+    func reset() {
+        self.count = 0
+    }
+}
+
+let counter = Counter()
+counter.increment()
+counter.incrementBy(amount: 5)
+counter.reset()
+
+struct Point {
+    var x = 0.0, y = 0.0
+    mutating func moveByX(x deltaX: Double, y deltaY: Double) {
+        self.x += deltaX
+        self.y += deltaY
+    }
+}
+
+var point = Point(x: 10.5, y:12.0)
+point.moveByX(x: 3.0, y: 4.5)
+print("이제 새로운 좌표는 (\(point.x), \(point.y))입니다.")
+
+class Location {
+    var x = 0.0, y = 0.0
+    
+    func moveByX(x deltaX: Double, y deltaY: Double) {
+        self.x += deltaX
+        self.y += deltaY
+    }
+}
+
+var loc = Location()
+loc.x = 10.5
+loc.y = 12.0
+loc.moveByX(x: 3.0, y: 4.5)
+
+print("이제 새로운 좌표는 (\(loc.x), \(loc.y)) 입니다.")
 
 
+class Foo {
+    class func fooTypeMethod() {
+        // 코드
+    }
+}
 
+let f = Foo()
+f.fooTypeMethod() // Error
+Foo.fooTypeMethod()
