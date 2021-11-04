@@ -11,13 +11,13 @@
 
 종류
 
-1. Instance Method (인스턴스 메소드)
+1. **Instance Method (인스턴스 메소드)**
     - 객체의 인스턴스를 생성해야 사용할 수 있는 메소드
     - 주어진 객체의 인스턴스와 함께 특수한 임무나 함수적인 기능을 수행하도록 캡슐화된 메소드
     - 틀을 이용하여 만들어낸 구체적이고 실질적인 것에 관련된 메소드
     - 객체 타입 자체로 호출 X, 반드시 인스턴스를 생성한 후에야 호출 가능
     
-2. Type Method (타입 메소드)
+2. **Type Method (타입 메소드)**
     - 객체의 인스턴스를 생성하지 않아도 사용할 수 있는 메소드
     - 객체 타입 자체에 관련된 메소드
     - 원형이나 틀에 관련된 메소드
@@ -33,40 +33,85 @@
 
 - 인스턴스 프로퍼티에 접근하거나 수정하는 방법 제공
 - 인스턴스 생성 목적에 따른 함수적 관계성 제공
+- 인스턴스 없이 독립적인 호출이 불가능 합니다.
 
-인스턴스 메소드는 같은 객체 내에서 정의된 다른 인스턴스 메소드나 인스턴스 프로퍼티에 접근할 수 있도록 권한을 부여합니다.
+```swift
+struct Resolution {
+    var width = 0
+    var height = 0
 
-해당 메소드가 속한 인스턴스를 통해서만 호출될 수 있습니다. 즉, 인스턴스 없이 독립적인 호출이 불가능 합니다.
+// 구조체의 요약된 설명을 리턴해주는 인스턴스 메소드
+    func desc() ->  String {
+        let desc = "이 해상도는 가로 \(self.width) X \(self.height)로 구성됩니다."
+        return desc
+    }
+}
 
-인스턴스 메소드와 일반 함수의 차이점
+class VideoMode {
+    var resolution = Resolution()
+    var interlaced = false
+    var frameRate = 0.0
+    var name: String?
 
-1. 구조체와 클래스의 인스턴스에 소속된다.
-2. 메소드 내에서 정의된 변수와 상수뿐만 아니라 클래스 범위에서 정의된 프로퍼티를 모두 참조할 수 있다.
-3. self 키워드를 사용할 수 있다.
+    // 클래스의 요약된 설명을 리턴해주는 인스턴스 메소드
+    func desc() -> String {
+        if self.name != nil {
+            let desc = "이 \(self.name!) 비디오 모드는 \(self.frameRate)의 프레임 비율로 표시됩니다."
+            return desc
+        } else {
+            let desc = "이 비디오 모드는 \(self.frameRate)의 프레임 비율로 표시됩니다."
+            return desc
+        }
+    }
+}
 
-### self 키워드
+var res = Resolution()
+res.width
+```
 
 인스턴스 메소드 내에서 프로퍼티를 읽어올 경우 self 키워드를 사용합니다.
 
-프로퍼티 앞에 붙은 self 키워드는 클래스나 구조체 자신을 가리킵니다.
-
-즉, 클래스나 구조체의 인스턴스 자신을 가리키는 것 입니다.
-
-반드시 self 키워드를 사용해야하는 경우
-
-—> 메소드 내부에서 동일한 프로퍼티와 동일한 이름을 가진 변수나 상수가 선언되었을때
-
-즉, 프로퍼티와 일반 변수의 이름이 충돌할 경우에 프로퍼티 앞에 반드시 self 키워드 사용
-
 ### Mutating 키워드 (클래스는 사용 X)
-
-구조체나 열거형의 인스턴스 메소드 내부에서 프로퍼티의 값을 수정할 때는 반드시 키워드를 추가해야합니다.
 
 내부 프로퍼티의 값을 수정할 때는 반드시 mutating 키워드를 사용하여 내부 프로퍼티를 수정합니다.
 
 구조체나 열거형 인스턴스를 상수로 할당 받으면 mutating 메소드를 호출 할 수 없습니다.
 
+```swift
+struct Point {
+    var x = 0.0, y = 0.0
+    mutating func moveByX(x deltaX: Double, y deltaY: Double) {
+        self.x += deltaX
+        self.y += deltaY
+    }
+}
+
+var point = Point(x: 10.5, y:12.0)
+point.moveByX(x: 3.0, y: 4.5)
+print("이제 새로운 좌표는 (\(point.x), \(point.y))입니다.")
+```
+
 클래스는 클래스에 정의된 모든 인스턴스 메소드는 인스턴스 내의 프로퍼티를 원하는 대로 수정할 수 있습니다.
+
+```swift
+class Location {
+    var x = 0.0, y = 0.0
+    
+    func moveByX(x deltaX: Double, y deltaY: Double) {
+        self.x += deltaX
+        self.y += deltaY
+    }
+}
+
+var loc = Location()
+loc.x = 10.5
+loc.y = 12.0
+loc.moveByX(x: 3.0, y: 4.5)
+
+print("이제 새로운 좌표는 (\(loc.x), \(loc.y)) 입니다.")
+```
+
+---
 
 # Type Method (타입 메소드)
 
@@ -74,24 +119,61 @@
 
 선언 방법
 
-static 
+- static
+- 하위 클래스에서 재정의 가능한 타입 메소드를 선언할때 class 키워드 사용 —> 클래스 타입에서만 사용
 
-또는 하위 클래스에서 재정의 가능한 타입 메소드를 선언할때 class 키워드 사용 —> 클래스 타입에서만 사용
+```swift
+class Foo {
+    class func fooTypeMethod() {
+        // 코드
+    }
+}
 
-인스턴스 메소드
+let f = Foo()
+f.fooTypeMethod() // Error
+Foo.fooTypeMethod()
+```
 
-: 메소드의 동작 범위가 인스턴스 내부로 제한되기 때문에 두 개의 인스턴스를 생성하여 메소드를 실행하면 메소드에 의해 값이 변하더라도 해당 인스턴스에만 국한되어 값이 변하고 나머지 인스턴스에는 영향을 미치지 않습니다.
+### Extension (확장)
 
-타입 메소드
+```swift
+struct Math {
+    static func abs(value: Int) -> Int {
+        if value > 0 {
+            return value
+        } else {
+            return -value
+        }
+    }
+}
 
-: 객체 타입 전체에 영향을 미칩니다.
+Math.abs(value: -20) //20
 
-즉, 타입 메소드를 사용하여 객체의 값을 변경하면 해당 객체의 타입을 사용하는 모든 곳에서 변경된 값이 적용됩니다.
+// extension 확장 (제곱, 반값)
+extension Math {
+    static func square(value: Int) -> Int {
+        return value * value
+    }
+    static func half(value: Int) -> Int {
+        return value / 2
+    }
+}
 
-타입 메소드를 사용할때는 반드시 영향 범위를 고려하여 사용하여야 합니다.
+Math.square(value: 3) // 9
+Math.square(value: 10) // 100
 
-인스턴스 프로퍼티를 참조할 수 없음
+let value: Int = 3
 
-타입 메소드 자체에 인스턴스가 존재하지 않기 때문
+// Swift에 저장되어있는 구조체도 확장 가능 (제곱, 반값)
+extension Int {
+    func square() -> Int {
+        return self * self
+    }
+    func half() -> Int {
+        return self / 2
+    }
+}
 
-따라서 타입 메소드에서 사용할 수 있는 프로퍼티는 오직 타입 프로퍼티뿐입니다.
+value.square()
+value.half()
+```
