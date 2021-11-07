@@ -22,27 +22,12 @@
 
 ---
 
-역할에 따른 분류
-
-- 저장 프로퍼티(Stored Property)
-- 연산 프로퍼티(Computed Property)
-
-소속에 따른 분류
-
-- 인스턴스 프로퍼티 (Instance Property)
-- 타입 프로퍼티 (Type Property)
-
----
-
 **프로퍼티 옵저버 (Property Observer)**
 
 : 프로퍼티 값을 모니터링하기 위해
 
 - 사용자가 정의한 특정 액션과 반응하도록 처리할 수 있습니다.
 - 우리가 직접 정의한 저장 프로퍼티에 추가할 수 있으며, 슈퍼 클래스로부터 상속 받은 서브 클래스에서도 추가할 수 있습니다.
-
----
-
  
 
 ```swift
@@ -116,3 +101,6 @@ person.fullName
 
 Person.isAlien
 ```
+
+더 자세한 내용   
+[지니의 개발 창고 - Property]https://coding-sojin2.tistory.com/25)

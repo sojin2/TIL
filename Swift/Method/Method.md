@@ -177,3 +177,7 @@ extension Int {
 value.square()
 value.half()
 ```
+
+
+더 자세한 내용
+[지니의 개발 창고 - Method](https://coding-sojin2.tistory.com/110)
