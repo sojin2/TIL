@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o4Z-ie-9Qk">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Awp-bo-6hI">
+            <objects>
+                <viewController id="o4Z-ie-9Qk" customClass="ViewController" customModule="Quiz_PageControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZZw-hL-ajC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nnb-pd-STm">
+                                <rect key="frame" x="0.0" y="388" width="414" height="120"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="QEu-9X-fGJ">
+                                <rect key="frame" x="0.0" y="836" width="414" height="26"/>
+                                <connections>
+                                    <action selector="numChange:" destination="o4Z-ie-9Qk" eventType="valueChanged" id="PcH-MN-fqX"/>
+                                </connections>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="m8Q-RS-FZb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QEu-9X-fGJ" firstAttribute="bottom" secondItem="m8Q-RS-FZb" secondAttribute="bottom" id="MEY-ap-EVz"/>
+                            <constraint firstItem="Nnb-pd-STm" firstAttribute="centerX" secondItem="ZZw-hL-ajC" secondAttribute="centerX" id="NNE-nh-web"/>
+                            <constraint firstItem="Nnb-pd-STm" firstAttribute="centerY" secondItem="ZZw-hL-ajC" secondAttribute="centerY" id="NyT-jp-QWf"/>
+                            <constraint firstItem="Nnb-pd-STm" firstAttribute="trailing" secondItem="QEu-9X-fGJ" secondAttribute="trailing" id="SLK-Rh-pn0"/>
+                            <constraint firstItem="Nnb-pd-STm" firstAttribute="leading" secondItem="m8Q-RS-FZb" secondAttribute="leading" id="UHC-HH-xpI"/>
+                            <constraint firstItem="Nnb-pd-STm" firstAttribute="leading" secondItem="QEu-9X-fGJ" secondAttribute="leading" id="anG-Jr-9aT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lbNumber" destination="Nnb-pd-STm" id="XAR-OK-HCA"/>
+                        <outlet property="pageControl" destination="QEu-9X-fGJ" id="CB0-8M-ar5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lOD-5z-9Pi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
