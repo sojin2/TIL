@@ -30,6 +30,7 @@ class ViewController: UIViewController {
         pickerMul.delegate = self
     }
 
+    
     func mul(dan: Int) {
         mulResult.text = ""
         for i in 1...9 {
@@ -61,6 +62,6 @@ extension ViewController: UIPickerViewDelegate {
     //pickerview에서 선택한 경우
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         lbText.text = "\(dan[row])단"
-        mul(dan: row + 2)
+        mul(dan: row + 2) // 베열 0부터 시작하므로
     }
 }

@@ -47,7 +47,7 @@ extension ViewController: UIPickerViewDataSource{
 }
 
 extension ViewController: UIPickerViewDelegate{
-    // PickerView에 파일명 배치
+     // PickerView에 파일명 배치
 //    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
 //        return imageFileName[row]
 //    }
@@ -57,7 +57,7 @@ extension ViewController: UIPickerViewDelegate{
         lblImageFileName.text = "Selected Item: \( imageFileName[row])"
         imageView.image = imageArray[row]
     }
-    
+
     
     // PickerView에 thumbnail 배치
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {

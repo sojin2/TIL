@@ -1,71 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w3P-kh-28V">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w82-mJ-dHj">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="gzH-cm-bFe">
+        <scene sceneID="u99-OZ-TRI">
             <objects>
-                <viewController id="w3P-kh-28V" customClass="ViewController" customModule="Quiz10" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bJm-jx-i4W">
+                <viewController id="w82-mJ-dHj" customClass="ViewController" customModule="Quiz10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MyE-y2-fuk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TF5-hK-s5E">
-                                <rect key="frame" x="20" y="229" width="374" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="알람 시간 맞추기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ux-tH-8eL">
+                                <rect key="frame" x="145" y="61" width="124" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESy-A9-Dba">
+                                <rect key="frame" x="20" y="117" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="3rv-H0-Eh9">
-                                <rect key="frame" x="47" y="340" width="320" height="216"/>
-                                <locale key="locale" localeIdentifier="ko_KR"/>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="VVA-hT-CA1">
+                                <rect key="frame" x="20" y="200" width="374" height="196"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <locale key="locale" localeIdentifier="ko"/>
                                 <connections>
-                                    <action selector="tableDatePicker:" destination="w3P-kh-28V" eventType="valueChanged" id="Uf8-ry-Bay"/>
+                                    <action selector="pickerTime:" destination="w82-mJ-dHj" eventType="valueChanged" id="cm8-Eh-9vT"/>
                                 </connections>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Md-OA-DDr">
-                                <rect key="frame" x="20" y="647" width="374" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jd8-xx-ko8">
+                                <rect key="frame" x="20" y="440" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="알람시간 맞추기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQA-Hj-gdf">
-                                <rect key="frame" x="129" y="105" width="157" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="mbr-as-gJu"/>
+                        <viewLayoutGuide key="safeArea" id="z6D-fv-fvI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="3rv-H0-Eh9" firstAttribute="centerY" secondItem="bJm-jx-i4W" secondAttribute="centerY" id="0yF-83-hsP"/>
-                            <constraint firstItem="3rv-H0-Eh9" firstAttribute="centerX" secondItem="bJm-jx-i4W" secondAttribute="centerX" id="2EF-oM-aeA"/>
-                            <constraint firstItem="PQA-Hj-gdf" firstAttribute="top" secondItem="mbr-as-gJu" secondAttribute="top" constant="61" id="5nf-6P-eaX"/>
-                            <constraint firstItem="3rv-H0-Eh9" firstAttribute="top" secondItem="TF5-hK-s5E" secondAttribute="bottom" constant="90" id="IyW-TU-yz6"/>
-                            <constraint firstItem="TF5-hK-s5E" firstAttribute="trailing" secondItem="5Md-OA-DDr" secondAttribute="trailing" id="LMa-a7-PXN"/>
-                            <constraint firstItem="PQA-Hj-gdf" firstAttribute="centerX" secondItem="TF5-hK-s5E" secondAttribute="centerX" id="OiP-vj-kR6"/>
-                            <constraint firstItem="TF5-hK-s5E" firstAttribute="leading" secondItem="5Md-OA-DDr" secondAttribute="leading" id="ZD3-0Y-VFu"/>
-                            <constraint firstItem="5Md-OA-DDr" firstAttribute="top" secondItem="3rv-H0-Eh9" secondAttribute="bottom" constant="91" id="j2m-O0-frK"/>
-                            <constraint firstItem="TF5-hK-s5E" firstAttribute="centerX" secondItem="3rv-H0-Eh9" secondAttribute="centerX" id="jVP-3G-ew3"/>
-                            <constraint firstItem="PQA-Hj-gdf" firstAttribute="leading" secondItem="mbr-as-gJu" secondAttribute="leading" constant="129" id="s7V-gi-rxO"/>
-                            <constraint firstItem="TF5-hK-s5E" firstAttribute="leading" secondItem="bJm-jx-i4W" secondAttribute="leadingMargin" id="ybU-SF-Cgn"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="lblCurrent" destination="TF5-hK-s5E" id="6V6-MS-USB"/>
-                        <outlet property="lblSelect" destination="5Md-OA-DDr" id="ivI-Ll-n4N"/>
+                        <outlet property="lblAlarmTime" destination="jd8-xx-ko8" id="xh5-Wy-awQ"/>
+                        <outlet property="lblCurrentTime" destination="ESy-A9-Dba" id="PmV-Ua-OpO"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="duP-e7-WIO" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9HG-g4-eCO" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
+            <point key="canvasLocation" x="18.840579710144929" y="61.607142857142854"/>
         </scene>
     </scenes>
     <resources>
