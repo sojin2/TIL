@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import CoreData
 
 class ViewController: UIViewController {
 
@@ -34,11 +33,10 @@ class ViewController: UIViewController {
         
         if answer == result {
             resultOK()
-        }
-        
-        if answer != result {
+        } else {
             resultMiss()
         }
+
     }
     func resultOK() {
         let calcOnAlert = UIAlertController(title: "결과", message: "정답입니다.", preferredStyle: .alert)
@@ -52,21 +50,19 @@ class ViewController: UIViewController {
         calcOnAlert.addAction(onAction)
         present(calcOnAlert, animated: true, completion: nil)
         
-        
     }
     
-func resultMiss() {
-    let calcOffAlert = UIAlertController(title: "결과", message: "실패입니다.", preferredStyle: .alert)
-    let offAction = UIAlertAction(title: "다시 풀어보세요.", style: .default, handler: {ACTION in
-        self.tfResult.text = ""
+    func resultMiss() {
+        let calcOffAlert = UIAlertController(title: "결과", message: "실패입니다.", preferredStyle: .alert)
+        let offAction = UIAlertAction(title: "다시 풀어보세요.", style: .default, handler: {ACTION in
+            self.tfResult.text = ""
+            
+        })
         
-    })
-    
-    calcOffAlert.addAction(offAction)
-    present(calcOffAlert, animated: true, completion: nil)
-    
-    
-}
+        calcOffAlert.addAction(offAction)
+        present(calcOffAlert, animated: true, completion: nil)
+        
+    }
     
 
 }

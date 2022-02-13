@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         let myUrl = checkUrl(tfUrl.text!)
         loadWebPage(url: myUrl)
         
-        //loadWebPage(url: tfUrl.text!)
+        loadWebPage(url: tfUrl.text!)
     }
     
     func checkUrl(_ url: String) -> String {
@@ -88,7 +88,7 @@ class ViewController: UIViewController {
             <body>
                 <h1>HTML String</h1>
                 <p>String 변수를 이용한 웹페이지</p>
-                <p><a href ="http://jtbc.joins.com">JTBC</a>로 이동 </p>
+                <p><a href = "https://jtbc.joins.com/">JTBC</a>로 이동 </p>
             </body>
         </html>
         """
