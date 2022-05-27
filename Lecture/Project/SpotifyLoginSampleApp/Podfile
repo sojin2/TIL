@@ -7,5 +7,7 @@ target 'SpotifyLoginSampleApp' do
 
   # Pods for SpotifyLoginSampleApp
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Analytics' 
 
 end

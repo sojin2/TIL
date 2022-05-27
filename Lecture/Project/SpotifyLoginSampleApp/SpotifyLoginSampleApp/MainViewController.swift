@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class MainViewController: UIViewController {
     @IBOutlet weak var welcomeLabel: UILabel!
@@ -22,11 +23,31 @@ class MainViewController: UIViewController {
         super.viewWillAppear(animated)
         
         navigationController?.navigationBar.isHidden = true
+        
+
+        // 1. 현재 로그인한 사용자의 이메일 가져오기
+        let email = Auth.auth().currentUser?.email ?? "User"
+
+        // 2. 라벨에 이메일 뿌려주기
+        welcomeLabel.text = """
+        환영합니다.
+        \(email)님
+        """
     }
     
     @IBAction func logoutButtonTapped(_ sender: UIButton) {
-        // 로그아웃시에 첫번째 화면으로 넘어감
-        self.navigationController?.popViewController(animated: true)
+        let firebaseAuth = Auth.auth()
+        
+        do {
+            try firebaseAuth.signOut()
+            // 로그아웃시에 첫번째 화면으로 넘어감
+            self.navigationController?.popToRootViewController(animated: true)
+        } catch let signOutError as NSError {
+            print("ERROR: signout \(signOutError.localizedDescription)")
+        }
+        
+        
+        
         
     }
 }
