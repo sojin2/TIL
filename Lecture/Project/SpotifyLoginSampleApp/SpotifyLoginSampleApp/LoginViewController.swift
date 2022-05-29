@@ -30,7 +30,7 @@ class LoginViewController: UIViewController {
         //Navigation Bar 가리기
         self.navigationController?.navigationBar.isHidden = true
         
-        //GoogleSignIn
+        //GoogleSignIn 
         GIDSignIn.sharedInstance()?.presentingViewController = self
     }
     
