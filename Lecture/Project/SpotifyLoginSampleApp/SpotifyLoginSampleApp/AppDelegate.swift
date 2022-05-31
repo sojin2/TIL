@@ -42,32 +42,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate: GIDSignInDelegate {
+    
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
-        // ...
+        // Error 처리 (어떤 에러인지)
         if let error = error {
-            print ("Error Google sign in: %@", error)
+            print ("Error Google sign In: \(error.localizedDescription)")
             return
         }
         
+        // User의 인증 값 (없으면 Return)
         guard let authentication = user.authentication else { return }
+        
+        // credential : google Id token/ access 를 위임을 부여 받음 --> 구글에서 전해준 토큰을 부여 받음
         let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
+        
+        // firebase 인증 정보로 등록하기 위해서 signIn
         Auth.auth().signIn(with: credential) {[weak self] _, _ in
             self?.showMainViewController()
         }
     }
     
-    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
-        // Perform any operations when the user disconnects from app here.
-        // ...
-    }
-}
-
-extension AppDelegate {
-    ///Main 화면으로 보내기
     func showMainViewController() {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let mainViewController = storyboard.instantiateViewController(identifier: "MainViewController")
         mainViewController.modalPresentationStyle = .fullScreen
         UIApplication.shared.windows.first?.rootViewController?.show(mainViewController, sender: nil)
     }
+    
 }
+

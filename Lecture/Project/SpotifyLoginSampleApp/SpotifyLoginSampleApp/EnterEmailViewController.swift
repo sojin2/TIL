@@ -45,7 +45,6 @@ class EnterEmailViewController: UIViewController {
         
         
         // 신규 사용자 생성
-        // [weak self] = 순환 방지 처리
         Auth.auth().createUser(withEmail: email, password: password) {[weak self] authResult, error in
             guard let self = self else { return }
             
@@ -64,7 +63,7 @@ class EnterEmailViewController: UIViewController {
         
     }
     
-    ///Main 화면으로 보내기
+    //Main 화면으로 보내기
     private func showMainViewController() {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let mainViewController = storyboard.instantiateViewController(withIdentifier: "MainViewController")
@@ -72,11 +71,14 @@ class EnterEmailViewController: UIViewController {
         navigationController?.show(mainViewController, sender: nil)
     }
     
-    ///Firebase 인증 로그인
+    //Firebase 인증 로그인
     func loginUser(withEmail email: String, password: String) {
+        
+        // Firebase에 email, password 정보 보냄
         Auth.auth().signIn(withEmail: email, password: password) {[weak self] _, error in
             guard let self = self else { return }
             
+            // error 처리
             if let error = error {
                 self.errorMessageLabel.text = error.localizedDescription
             } else {

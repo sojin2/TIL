@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>547743338511-6d4oig9m7426kt2o15nt6k4lbhm36lig.apps.googleusercontent.com</string>
+	<string>84306238707-agakt7v1qsravo4slh55qle5cl95kklm.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.547743338511-6d4oig9m7426kt2o15nt6k4lbhm36lig</string>
+	<string>com.googleusercontent.apps.84306238707-agakt7v1qsravo4slh55qle5cl95kklm</string>
 	<key>API_KEY</key>
-	<string>AIzaSyB9S1EjkTSCA_d4fXWO_c1CfEkxMuRRd8c</string>
+	<string>AIzaSyApe0h12QlfyyfBjME2PKr26TPq50BvvCo</string>
 	<key>GCM_SENDER_ID</key>
-	<string>547743338511</string>
+	<string>84306238707</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.belita.SpotifyLoginSampleApp</string>
+	<string>com.soo.SpotifyLoginSampleApp</string>
 	<key>PROJECT_ID</key>
-	<string>samplelogin-70a35</string>
+	<string>login-sample-e9cce</string>
 	<key>STORAGE_BUCKET</key>
-	<string>samplelogin-70a35.appspot.com</string>
+	<string>login-sample-e9cce.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:547743338511:ios:a458cbc9ecf54e65c6d37a</string>
+	<string>1:84306238707:ios:e5d6b58bcd941d6905eb86</string>
 </dict>
 </plist>
