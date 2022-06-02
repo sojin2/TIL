@@ -2236,20 +2236,9 @@ iOS 개발자들에게 유용한 사이트를 모아 카테고리별로 정리�
 - [PYPL PopularitY of Programming Language](http://pypl.github.io/PYPL.html)
 - [RedMonk Programming Language Rankings: 2022](https://redmonk.com/sogrady/2022/03/28/language-rankings-1-22/)
 
-## **etc**
-
-*차후 적절한 카테고리로 묶여 이동될 수 있는 링크*
-
-- [iOS Developer Roadmap](https://github.com/BohdanOrlov/iOS-Developer-Roadmap) - iOS 개발자를 위한 로드맵
-- [Writing Exercises](http://writingexercises.co.uk/index.php) - 각종 랜덤 데이터 (단어, 문장, 이미지 등 ) 추출
-- [Why The Failure, Auto Layout](https://www.wtfautolayout.com/) - 오토레이아웃 에러 로그를 시각화
-- [App Privacy Policy Generator](https://app-privacy-policy-generator.firebaseapp.com/) - Privacy Policy, Terms & Conditions 생성
-- [swift-scripts](https://github.com/PaulTaykalo/swift-scripts) - 미사용 Swift code, file, function 탐색
-- [DeallocationChecker](https://github.com/fastred/DeallocationChecker) - 메모리 릭이 발생하는 뷰컨트롤러 캐치
-- [App|Sight](https://www.appsight.io/) - 특정 앱에서 사용 중인 라이브러리 또는 특정 SDK를 사용하는 앱의 목록 제공
-
-
-참고
+참고 Git
 https://github.com/giftbott/iOSDevLinks
+
+
 주니어 취업 관련
 https://github.com/jojoldu/junior-recruit-scheduler
