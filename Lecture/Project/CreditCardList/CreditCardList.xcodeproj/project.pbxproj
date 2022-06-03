@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020B1F08284855FB006992BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 020B1F07284855FB006992BB /* GoogleService-Info.plist */; };
+		020B1F4328487673006992BB /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020B1F4228487673006992BB /* CardDetailViewController.swift */; };
+		020B1F4528487F7A006992BB /* money.json in Resources */ = {isa = PBXBuildFile; fileRef = 020B1F4428487F7A006992BB /* money.json */; };
 		02A3B47D2845FF6700294384 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A3B47C2845FF6700294384 /* AppDelegate.swift */; };
 		02A3B47F2845FF6700294384 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A3B47E2845FF6700294384 /* SceneDelegate.swift */; };
 		02A3B4842845FF6700294384 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A3B4822845FF6700294384 /* Main.storyboard */; };
@@ -16,9 +19,13 @@
 		02A3B49328460B2100294384 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A3B49228460B2100294384 /* CreditCard.swift */; };
 		02A3B4962846104B00294384 /* CardListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A3B4942846104B00294384 /* CardListCell.swift */; };
 		02A3B4972846104B00294384 /* CardListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A3B4952846104B00294384 /* CardListCell.xib */; };
+		83F0DF5B633B48332E9BFAA1 /* Pods_CreditCardList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6129B49F9A99FD0DD15FE4F2 /* Pods_CreditCardList.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		020B1F07284855FB006992BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		020B1F4228487673006992BB /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
+		020B1F4428487F7A006992BB /* money.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = money.json; sourceTree = "<group>"; };
 		02A3B4792845FF6700294384 /* CreditCardList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditCardList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02A3B47C2845FF6700294384 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02A3B47E2845FF6700294384 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +37,9 @@
 		02A3B49228460B2100294384 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
 		02A3B4942846104B00294384 /* CardListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListCell.swift; sourceTree = "<group>"; };
 		02A3B4952846104B00294384 /* CardListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardListCell.xib; sourceTree = "<group>"; };
+		0CE62B2A39DF3F24863BFC37 /* Pods-CreditCardList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardList.debug.xcconfig"; path = "Target Support Files/Pods-CreditCardList/Pods-CreditCardList.debug.xcconfig"; sourceTree = "<group>"; };
+		6129B49F9A99FD0DD15FE4F2 /* Pods_CreditCardList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CreditCardList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B25DC53E0A1AF98E5AE83E91 /* Pods-CreditCardList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardList.release.xcconfig"; path = "Target Support Files/Pods-CreditCardList/Pods-CreditCardList.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F0DF5B633B48332E9BFAA1 /* Pods_CreditCardList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +59,8 @@
 			children = (
 				02A3B47B2845FF6700294384 /* CreditCardList */,
 				02A3B47A2845FF6700294384 /* Products */,
+				EF887F0805B2BB8C76589D87 /* Pods */,
+				7C56204FA94A0A015DB9097E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,18 +75,38 @@
 		02A3B47B2845FF6700294384 /* CreditCardList */ = {
 			isa = PBXGroup;
 			children = (
-				02A3B4902845FFA000294384 /* CardListViewController.swift */,
+				020B1F4428487F7A006992BB /* money.json */,
 				02A3B47C2845FF6700294384 /* AppDelegate.swift */,
 				02A3B47E2845FF6700294384 /* SceneDelegate.swift */,
 				02A3B4822845FF6700294384 /* Main.storyboard */,
+				02A3B49228460B2100294384 /* CreditCard.swift */,
+				02A3B4902845FFA000294384 /* CardListViewController.swift */,
+				020B1F4228487673006992BB /* CardDetailViewController.swift */,
 				02A3B4942846104B00294384 /* CardListCell.swift */,
 				02A3B4952846104B00294384 /* CardListCell.xib */,
 				02A3B4852845FF6900294384 /* Assets.xcassets */,
 				02A3B4872845FF6900294384 /* LaunchScreen.storyboard */,
 				02A3B48A2845FF6900294384 /* Info.plist */,
-				02A3B49228460B2100294384 /* CreditCard.swift */,
+				020B1F07284855FB006992BB /* GoogleService-Info.plist */,
 			);
 			path = CreditCardList;
+			sourceTree = "<group>";
+		};
+		7C56204FA94A0A015DB9097E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6129B49F9A99FD0DD15FE4F2 /* Pods_CreditCardList.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF887F0805B2BB8C76589D87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CE62B2A39DF3F24863BFC37 /* Pods-CreditCardList.debug.xcconfig */,
+				B25DC53E0A1AF98E5AE83E91 /* Pods-CreditCardList.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02A3B48D2845FF6900294384 /* Build configuration list for PBXNativeTarget "CreditCardList" */;
 			buildPhases = (
+				93ABE98D272F150D41FA8B99 /* [CP] Check Pods Manifest.lock */,
 				02A3B4752845FF6700294384 /* Sources */,
 				02A3B4762845FF6700294384 /* Frameworks */,
 				02A3B4772845FF6700294384 /* Resources */,
+				E98B8BEB3B34EA5AFA563961 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +171,8 @@
 			files = (
 				02A3B4892845FF6900294384 /* LaunchScreen.storyboard in Resources */,
 				02A3B4862845FF6900294384 /* Assets.xcassets in Resources */,
+				020B1F4528487F7A006992BB /* money.json in Resources */,
+				020B1F08284855FB006992BB /* GoogleService-Info.plist in Resources */,
 				02A3B4842845FF6700294384 /* Main.storyboard in Resources */,
 				02A3B4972846104B00294384 /* CardListCell.xib in Resources */,
 			);
@@ -143,12 +180,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		93ABE98D272F150D41FA8B99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CreditCardList-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E98B8BEB3B34EA5AFA563961 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CreditCardList/Pods-CreditCardList-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CreditCardList/Pods-CreditCardList-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CreditCardList/Pods-CreditCardList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		02A3B4752845FF6700294384 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				02A3B49328460B2100294384 /* CreditCard.swift in Sources */,
+				020B1F4328487673006992BB /* CardDetailViewController.swift in Sources */,
 				02A3B4962846104B00294384 /* CardListCell.swift in Sources */,
 				02A3B4912845FFA000294384 /* CardListViewController.swift in Sources */,
 				02A3B47D2845FF6700294384 /* AppDelegate.swift in Sources */,
@@ -294,6 +374,7 @@
 		};
 		02A3B48E2845FF6900294384 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CE62B2A39DF3F24863BFC37 /* Pods-CreditCardList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,6 +403,7 @@
 		};
 		02A3B48F2845FF6900294384 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B25DC53E0A1AF98E5AE83E91 /* Pods-CreditCardList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -9,11 +9,11 @@ import Foundation
 
 struct CreditCard: Codable {
     let id: Int
-    let rank: String
+    let rank: Int
     let name: String
     let cardImageURL: String
     let promotionDetail: PromotionDetail
-    let isSelected: Bool
+    let isSelected: Bool?
 }
 
 struct PromotionDetail: Codable {
