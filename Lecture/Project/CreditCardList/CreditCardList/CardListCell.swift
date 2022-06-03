@@ -2,11 +2,10 @@
 //  CardListCell.swift
 //  CreditCardList
 //
-//  Created by HelloDigital_iOS_Dev on 2022/05/31.
+//  Created by HelloDigital_iOS_Dev on 2022/06/03.
 //
 
 import UIKit
-import FirebaseDatabase
 
 class CardListCell: UITableViewCell {
     @IBOutlet weak var cardImageView: UIImageView!
@@ -14,16 +13,5 @@ class CardListCell: UITableViewCell {
     @IBOutlet weak var promotionLabel: UILabel!
     @IBOutlet weak var cardNameLabel: UILabel!
     
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
 }

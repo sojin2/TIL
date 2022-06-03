@@ -12,4 +12,5 @@ pod 'lottie-ios', '3.2.3'
 
 pod 'Firebase/Firestore'
 pod 'FirebaseFirestoreSwift'
+
 end
