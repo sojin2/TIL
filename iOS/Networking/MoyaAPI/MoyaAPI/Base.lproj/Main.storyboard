@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GU7-d2-rZl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="pAs-41-rSq">
+            <objects>
+                <viewController id="GU7-d2-rZl" customClass="ViewController" customModule="MoyaAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gqm-8N-6Xd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lR-1e-n9E">
+                                <rect key="frame" x="0.0" y="270" width="414" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8V-2S-k3x">
+                                <rect key="frame" x="144" y="442" width="127" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="다른 명언"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="GU7-d2-rZl" eventType="touchUpInside" id="xNU-Bx-d4A"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eFD-mR-ixX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="O8V-2S-k3x" firstAttribute="leading" secondItem="eFD-mR-ixX" secondAttribute="leading" constant="144" id="6jk-WL-W1u"/>
+                            <constraint firstItem="6lR-1e-n9E" firstAttribute="top" secondItem="eFD-mR-ixX" secondAttribute="top" constant="226" id="Ik4-D6-W81"/>
+                            <constraint firstItem="6lR-1e-n9E" firstAttribute="leading" secondItem="eFD-mR-ixX" secondAttribute="leading" id="OTi-hd-T5n"/>
+                            <constraint firstItem="eFD-mR-ixX" firstAttribute="trailing" secondItem="O8V-2S-k3x" secondAttribute="trailing" constant="143" id="WpA-yC-f9z"/>
+                            <constraint firstItem="O8V-2S-k3x" firstAttribute="top" secondItem="6lR-1e-n9E" secondAttribute="bottom" constant="136" id="bLB-Pv-Xff"/>
+                            <constraint firstItem="6lR-1e-n9E" firstAttribute="trailing" secondItem="eFD-mR-ixX" secondAttribute="trailing" id="xgj-tV-cyr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="adviceLabel" destination="6lR-1e-n9E" id="h7Z-Pi-Npo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="43a-Ji-qT5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95.652173913043484" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

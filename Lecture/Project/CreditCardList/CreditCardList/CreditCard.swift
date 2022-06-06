@@ -2,18 +2,18 @@
 //  CreditCard.swift
 //  CreditCardList
 //
-//  Created by HelloDigital_iOS_Dev on 2022/05/31.
+//  Created by HelloDigital_iOS_Dev on 2022/06/03.
 //
 
 import Foundation
 
 struct CreditCard: Codable {
     let id: Int
-    let rank: String
+    let rank: Int
     let name: String
     let cardImageURL: String
     let promotionDetail: PromotionDetail
-    let isSelected: Bool
+    let isSelected: Bool?
 }
 
 struct PromotionDetail: Codable {
