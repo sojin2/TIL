@@ -10,12 +10,14 @@ import UIKit
 
 
 // TODO: Codable과 Equatable 추가
+// todo간에는 동등 비교가 가능해야하는데 그럴려면 Equatable 프로토콜을 따라야 한다
 struct Todo: Codable, Equatable {
     let id: Int
     var isDone: Bool
     var detail: String
     var isToday: Bool
     
+    // struct 타입인데 스스로를 업데이트 하므로 mutating
     mutating func update(isDone: Bool, detail: String, isToday: Bool) {
         // [x] TODO: update 로직 추가
         self.isDone = isDone
@@ -23,14 +25,16 @@ struct Todo: Codable, Equatable {
         self.isToday = isToday
     }
     
+    // 동등함의 조건 커스텀
     static func == (lhs: Self, rhs: Self) -> Bool {
-        // [x]TODO: 동등 조건 추가
+        // [x] TODO: 동등 조건 추가
         return lhs.id == rhs.id
     }
 }
 
 class TodoManager {
     
+    // 싱글톤 - 하나만 만들어놓고 계속 불러다 쓰면될 때 사용
     static let shared = TodoManager()
     
     static var lastId: Int = 0
@@ -52,10 +56,19 @@ class TodoManager {
     
     func deleteTodo(_ todo: Todo) {
         // [x] TODO: delete 로직 추가
-        todos = todos.filter { $0.id != todo.id }
+        
+        // 데이터가 적을때 사용하기 좋음
 //        if let index = todos.firstIndex(of: todo) {
 //            todos.remove(at: index)
 //        }
+        
+        // 데이터가 많을 때 사용하기 좋음
+//        todos = todos.filter{ existingTodo in
+//            return existingTodo.id != todo.id
+//        }
+        
+        // 단축 문법 (큰 이슈가 아니라면 단축 문법을 사용하는게 좋음)
+        todos = todos.filter { $0.id != todo.id }
         saveTodo()
     }
     
