@@ -12,17 +12,17 @@
 		02F2996727F68FCB001A6CF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F2996627F68FCB001A6CF3 /* Assets.xcassets */; };
 		02F2996A27F68FCB001A6CF3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F2996927F68FCB001A6CF3 /* Preview Assets.xcassets */; };
 		02F2997327F694A9001A6CF3 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F2997227F694A9001A6CF3 /* MovieModel.swift */; };
-		02F2997527F6956A001A6CF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F2997427F6956A001A6CF3 /* ViewController.swift */; };
+		02F2997527F6956A001A6CF3 /* UrlsessionAPI in Sources */ = {isa = PBXBuildFile; fileRef = 02F2997427F6956A001A6CF3 /* UrlsessionAPI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02F2995F27F68FC9001A6CF3 /* Urlsession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Urlsession.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02F2995F27F68FC9001A6CF3 /* UrlsessionAPIAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UrlsessionAPIAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02F2996227F68FC9001A6CF3 /* UrlsessionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlsessionApp.swift; sourceTree = "<group>"; };
 		02F2996427F68FC9001A6CF3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		02F2996627F68FCB001A6CF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02F2996927F68FCB001A6CF3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		02F2997227F694A9001A6CF3 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
-		02F2997427F6956A001A6CF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		02F2997427F6956A001A6CF3 /* UrlsessionAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = UrlsessionAPI; path = ../../UrlsessionAPI; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +39,7 @@
 		02F2995627F68FC9001A6CF3 = {
 			isa = PBXGroup;
 			children = (
-				02F2996127F68FC9001A6CF3 /* Urlsession */,
+				02F2996127F68FC9001A6CF3 /* UrlsessionAPI */,
 				02F2996027F68FC9001A6CF3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,12 +47,12 @@
 		02F2996027F68FC9001A6CF3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				02F2995F27F68FC9001A6CF3 /* Urlsession.app */,
+				02F2995F27F68FC9001A6CF3 /* UrlsessionAPIAPI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		02F2996127F68FC9001A6CF3 /* Urlsession */ = {
+		02F2996127F68FC9001A6CF3 /* UrlsessionAPI */ = {
 			isa = PBXGroup;
 			children = (
 				02F2997127F69082001A6CF3 /* ViewController */,
@@ -62,7 +62,7 @@
 				02F2996627F68FCB001A6CF3 /* Assets.xcassets */,
 				02F2996827F68FCB001A6CF3 /* Preview Content */,
 			);
-			path = Urlsession;
+			path = UrlsessionAPI;
 			sourceTree = "<group>";
 		};
 		02F2996827F68FCB001A6CF3 /* Preview Content */ = {
@@ -84,7 +84,7 @@
 		02F2997127F69082001A6CF3 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				02F2997427F6956A001A6CF3 /* ViewController.swift */,
+				02F2997427F6956A001A6CF3 /* UrlsessionAPI */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -92,9 +92,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		02F2995E27F68FC9001A6CF3 /* Urlsession */ = {
+		02F2995E27F68FC9001A6CF3 /* UrlsessionAPI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 02F2996D27F68FCB001A6CF3 /* Build configuration list for PBXNativeTarget "Urlsession" */;
+			buildConfigurationList = 02F2996D27F68FCB001A6CF3 /* Build configuration list for PBXNativeTarget "UrlsessionAPI" */;
 			buildPhases = (
 				02F2995B27F68FC9001A6CF3 /* Sources */,
 				02F2995C27F68FC9001A6CF3 /* Frameworks */,
@@ -104,9 +104,9 @@
 			);
 			dependencies = (
 			);
-			name = Urlsession;
+			name = UrlsessionAPI;
 			productName = Urlsession;
-			productReference = 02F2995F27F68FC9001A6CF3 /* Urlsession.app */;
+			productReference = 02F2995F27F68FC9001A6CF3 /* UrlsessionAPIAPI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -124,7 +124,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 02F2995A27F68FC9001A6CF3 /* Build configuration list for PBXProject "Urlsession" */;
+			buildConfigurationList = 02F2995A27F68FC9001A6CF3 /* Build configuration list for PBXProject "UrlsessionAPI" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -137,7 +137,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				02F2995E27F68FC9001A6CF3 /* Urlsession */,
+				02F2995E27F68FC9001A6CF3 /* UrlsessionAPI */,
 			);
 		};
 /* End PBXProject section */
@@ -161,7 +161,7 @@
 			files = (
 				02F2997327F694A9001A6CF3 /* MovieModel.swift in Sources */,
 				02F2996527F68FC9001A6CF3 /* ContentView.swift in Sources */,
-				02F2997527F6956A001A6CF3 /* ViewController.swift in Sources */,
+				02F2997527F6956A001A6CF3 /* UrlsessionAPI in Sources */,
 				02F2996327F68FC9001A6CF3 /* UrlsessionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,10 +290,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Urlsession/Preview Content\"";
-				DEVELOPMENT_TEAM = 2QBC82QUS4;
+				DEVELOPMENT_ASSET_PATHS = "\"UrlsessionAPI/Preview Content\"";
+				DEVELOPMENT_TEAM = 24489HL9PA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UrlSession/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,8 +305,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.belita.Urlsession;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soo.UrlsessionAPI;
+				PRODUCT_NAME = UrlsessionAPIAPI;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,10 +320,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Urlsession/Preview Content\"";
-				DEVELOPMENT_TEAM = 2QBC82QUS4;
+				DEVELOPMENT_ASSET_PATHS = "\"UrlsessionAPI/Preview Content\"";
+				DEVELOPMENT_TEAM = 24489HL9PA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UrlSession/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -333,8 +335,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.belita.Urlsession;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.soo.UrlsessionAPI;
+				PRODUCT_NAME = UrlsessionAPIAPI;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -344,7 +346,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		02F2995A27F68FC9001A6CF3 /* Build configuration list for PBXProject "Urlsession" */ = {
+		02F2995A27F68FC9001A6CF3 /* Build configuration list for PBXProject "UrlsessionAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				02F2996B27F68FCB001A6CF3 /* Debug */,
@@ -353,7 +355,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		02F2996D27F68FCB001A6CF3 /* Build configuration list for PBXNativeTarget "Urlsession" */ = {
+		02F2996D27F68FCB001A6CF3 /* Build configuration list for PBXNativeTarget "UrlsessionAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				02F2996E27F68FCB001A6CF3 /* Debug */,
