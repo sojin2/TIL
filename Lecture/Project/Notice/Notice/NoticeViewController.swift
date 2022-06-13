@@ -27,11 +27,12 @@ class NoticeViewController: UIViewController {
         }
         titleLabel.text = noticeContents.title
         detailLabel.text = noticeContents.detail
-        detailLabel.text = noticeContents.date
+        dateLabel.text = noticeContents.date
 
     }
 
     @IBAction func doneButtonTapped(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
     
 }

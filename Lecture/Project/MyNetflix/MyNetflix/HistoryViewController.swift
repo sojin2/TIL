@@ -29,9 +29,18 @@ class HistoryViewController: UIViewController {
             let data = try! JSONSerialization.data(withJSONObject: Array(searchHistory.values), options: [])
             
             let decoder = JSONDecoder()
-            let searchTerms = decoder.decode([searchTerms].self, from: data)
+            let searchTerms = try! decoder.decode([SearchTerm].self, from: data)
+            self.searchTerms = searchTerms.sorted(by: {(term1, term2) in
+                return term1.timestamp > term2.timestamp
+            })
             
-            print("---> snapshot: \(data)")
+            // { $0.timestamp > $1.timestamp } 
+            
+            
+            self.tableView.reloadData()
+            
+            
+            print("---> snapshot: \(data), \(searchTerms)")
         }
     }
 }
