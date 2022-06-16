@@ -8,16 +8,18 @@
 import UIKit
 import CoreData
 import Firebase
-import FirebaseMessageing
+import FirebaseMessaging
 import UserNotifications
 
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        
         UNUserNotificationCenter.current().delegate = self
         
+        // 권한
         let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
         UNUserNotificationCenter.current().requestAuthorization(options: authOptions) { _, error in
             if let error = error {
@@ -30,7 +32,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         FirebaseApp.configure()
+        // FCM 현재 등록 토큰이나 갱신되는 시점을 알고 적절한 액션 추가 가능
         Messaging.messaging().delegate = self
         
         //FCM 현재 등록 토큰 확인
@@ -106,6 +110,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.list, .banner, .badge, .sound])
+    }
+    
+}
+
 extension AppDelegate: MessagingDelegate {
     // FCM 토근 갱신 시점 확인
     func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
@@ -114,9 +126,4 @@ extension AppDelegate: MessagingDelegate {
     }
 }
 
-extension AppDelegate: UNUserNotificationCenterDelegate {
-    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        completionHandler([.list, .banner, .badge, .sound])
-    }
-}
 

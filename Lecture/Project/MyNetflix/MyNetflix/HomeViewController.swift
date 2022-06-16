@@ -46,7 +46,7 @@ class HomeViewController: UIViewController {
         // - [x] 거기서 interstella 객체 하나를 가져온다
         // - [x] 그 객체를 이용해서 PlayViewController를 띄운다
         
-        SearchAPI.search("int봐erstella") { movies in
+        SearchAPI.search("Badman") { movies in
             guard let interstella = movies.first else { return }
             
             DispatchQueue.main.async {

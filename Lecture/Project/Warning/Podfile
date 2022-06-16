@@ -7,6 +7,6 @@ target 'Warning' do
 
   # Pods for Warning
 pod 'Firebase/Analytics'
-pod 'Firebase/Messaging'
+pod 'Firebase/Messaging', '9.1.0'
 
 end
