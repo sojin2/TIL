@@ -6,6 +6,7 @@ target 'Brewery' do
   use_frameworks!
 
   # Pods for Brewery
-pod
+pod 'Kingfisher', '~> 7.0'
+pod 'SnapKit'
 
 end

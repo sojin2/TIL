@@ -15,6 +15,7 @@
 		028D2CB4285C1F9800872C24 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D2CB3285C1F9800872C24 /* BeerDetailViewController.swift */; };
 		028D2CB6285C1FA700872C24 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D2CB5285C1FA700872C24 /* Beer.swift */; };
 		028D2CB8285C1FB800872C24 /* BeerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028D2CB7285C1FB800872C24 /* BeerListCell.swift */; };
+		F499E135F9DBB32325604D9C /* Pods_Brewery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 302FD4725BC9ED7F1557564F /* Pods_Brewery.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		028D2CB3285C1F9800872C24 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
 		028D2CB5285C1FA700872C24 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		028D2CB7285C1FB800872C24 /* BeerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListCell.swift; sourceTree = "<group>"; };
+		072771FD0949AD717051A5EE /* Pods-Brewery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brewery.release.xcconfig"; path = "Target Support Files/Pods-Brewery/Pods-Brewery.release.xcconfig"; sourceTree = "<group>"; };
+		1A08C5DB7572CB808C6BBFAD /* Pods-Brewery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brewery.debug.xcconfig"; path = "Target Support Files/Pods-Brewery/Pods-Brewery.debug.xcconfig"; sourceTree = "<group>"; };
+		302FD4725BC9ED7F1557564F /* Pods_Brewery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brewery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F499E135F9DBB32325604D9C /* Pods_Brewery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,8 @@
 			children = (
 				028D2C9C285C16D400872C24 /* Brewery */,
 				028D2C9B285C16D400872C24 /* Products */,
+				701084B1303AC6262ADBB639 /* Pods */,
+				C07635D62D7CC55194F6A03F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +80,24 @@
 			path = Brewery;
 			sourceTree = "<group>";
 		};
+		701084B1303AC6262ADBB639 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A08C5DB7572CB808C6BBFAD /* Pods-Brewery.debug.xcconfig */,
+				072771FD0949AD717051A5EE /* Pods-Brewery.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C07635D62D7CC55194F6A03F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				302FD4725BC9ED7F1557564F /* Pods_Brewery.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 028D2CAE285C16D700872C24 /* Build configuration list for PBXNativeTarget "Brewery" */;
 			buildPhases = (
+				321753AEAFD66610952797B9 /* [CP] Check Pods Manifest.lock */,
 				028D2C96285C16D400872C24 /* Sources */,
 				028D2C97285C16D400872C24 /* Frameworks */,
 				028D2C98285C16D400872C24 /* Resources */,
+				1DF78793E4E0D5FDB4BB772B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -137,6 +164,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DF78793E4E0D5FDB4BB772B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brewery/Pods-Brewery-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Brewery/Pods-Brewery-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Brewery/Pods-Brewery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		321753AEAFD66610952797B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Brewery-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		028D2C96285C16D400872C24 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		028D2CAF285C16D700872C24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A08C5DB7572CB808C6BBFAD /* Pods-Brewery.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +379,7 @@
 		};
 		028D2CB0285C16D700872C24 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 072771FD0949AD717051A5EE /* Pods-Brewery.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

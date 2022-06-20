@@ -27,11 +27,11 @@ class ViewController: UIViewController {
         animationView.loopMode = .loop
         
         // Applying UIView animation
-        let minimizeTransform = CGAffineTransform(scaleX: 0.1, y: 0.1)
-        animationView.transform = minimizeTransform
-        UIView.animate(withDuration: 3.0, delay: 0.0, options: [.repeat, .autoreverse], animations: {
-            animationView.transform = CGAffineTransform.identity
-        }, completion: nil)
+//        let minimizeTransform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+//        animationView.transform = minimizeTransform
+//        UIView.animate(withDuration: 3.0, delay: 0.0, options: [.repeat, .autoreverse], animations: {
+//            animationView.transform = CGAffineTransform.identity
+//        }, completion: nil)
         
 
         animationView.play()
