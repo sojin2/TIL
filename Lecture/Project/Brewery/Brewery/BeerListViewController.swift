@@ -52,6 +52,7 @@ extension BeerListViewController {
     }
 }
 
+// prefetchRowsAt : 다음 페이지를 가져 올 수 있도록 해줌
 extension BeerListViewController: UITableViewDataSourcePrefetching {
     func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
         guard currentPage != 1 else { return }
