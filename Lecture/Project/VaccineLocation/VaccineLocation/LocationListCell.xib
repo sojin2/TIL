@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LocationListCell" rowHeight="100" id="KGk-i7-Jjw" customClass="LocationListCell" customModule="VaccineLocation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="센터명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wzm-Fy-3J2">
+                        <rect key="frame" x="10" y="10" width="71" height="16"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="건물명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77s-ug-Rc7">
+                        <rect key="frame" x="10" y="31" width="71" height="16"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="업데이트 시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b83-lK-m5q">
+                        <rect key="frame" x="10" y="73" width="71" height="16"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHt-uD-2oI">
+                        <rect key="frame" x="10" y="52" width="71" height="16"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="염주종합체육관" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUE-Tp-s6O">
+                        <rect key="frame" x="135" y="30.5" width="221" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="광주광역시 서구 금화로 278" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3E-yQ-qE1">
+                        <rect key="frame" x="135" y="51.5" width="221" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021-06-02 07:32:06" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcO-Gz-9Q7">
+                        <rect key="frame" x="135" y="72.5" width="221" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="코로나19 광주광역시 서구 예방접종센터" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OCl-0k-Qk1">
+                        <rect key="frame" x="135" y="9.5" width="221" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="b83-lK-m5q" firstAttribute="leading" secondItem="Wzm-Fy-3J2" secondAttribute="leading" id="2gN-6h-5jI"/>
+                    <constraint firstItem="xUE-Tp-s6O" firstAttribute="trailing" secondItem="OCl-0k-Qk1" secondAttribute="trailing" id="AN7-NP-FMk"/>
+                    <constraint firstItem="xUE-Tp-s6O" firstAttribute="leading" secondItem="OCl-0k-Qk1" secondAttribute="leading" id="CL2-Oi-YIu"/>
+                    <constraint firstItem="OCl-0k-Qk1" firstAttribute="centerY" secondItem="Wzm-Fy-3J2" secondAttribute="centerY" id="Dhv-LN-ucp"/>
+                    <constraint firstItem="OCl-0k-Qk1" firstAttribute="leading" secondItem="Wzm-Fy-3J2" secondAttribute="trailing" constant="54" id="F5q-R1-2kB"/>
+                    <constraint firstItem="Wzm-Fy-3J2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="H64-R7-ERd"/>
+                    <constraint firstItem="rcO-Gz-9Q7" firstAttribute="leading" secondItem="OCl-0k-Qk1" secondAttribute="leading" id="IhF-XK-pMa"/>
+                    <constraint firstItem="Wzm-Fy-3J2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="IuK-b5-7Da"/>
+                    <constraint firstItem="77s-ug-Rc7" firstAttribute="leading" secondItem="Wzm-Fy-3J2" secondAttribute="leading" id="KPG-3g-bfN"/>
+                    <constraint firstItem="rcO-Gz-9Q7" firstAttribute="trailing" secondItem="OCl-0k-Qk1" secondAttribute="trailing" id="MeX-Sh-eao"/>
+                    <constraint firstItem="eHt-uD-2oI" firstAttribute="top" secondItem="77s-ug-Rc7" secondAttribute="bottom" constant="5" id="N03-Zb-LFY"/>
+                    <constraint firstItem="b83-lK-m5q" firstAttribute="top" secondItem="eHt-uD-2oI" secondAttribute="bottom" constant="5" id="PJ0-kI-1pe"/>
+                    <constraint firstItem="o3E-yQ-qE1" firstAttribute="leading" secondItem="OCl-0k-Qk1" secondAttribute="leading" id="RZh-ei-U0c"/>
+                    <constraint firstItem="eHt-uD-2oI" firstAttribute="trailing" secondItem="Wzm-Fy-3J2" secondAttribute="trailing" id="TQo-EH-O65"/>
+                    <constraint firstItem="xUE-Tp-s6O" firstAttribute="centerY" secondItem="77s-ug-Rc7" secondAttribute="centerY" id="U48-OA-vrN"/>
+                    <constraint firstItem="eHt-uD-2oI" firstAttribute="centerX" secondItem="Wzm-Fy-3J2" secondAttribute="centerX" id="UxF-qJ-Dam"/>
+                    <constraint firstItem="o3E-yQ-qE1" firstAttribute="trailing" secondItem="OCl-0k-Qk1" secondAttribute="trailing" id="XSh-fq-Aaa"/>
+                    <constraint firstItem="b83-lK-m5q" firstAttribute="centerX" secondItem="Wzm-Fy-3J2" secondAttribute="centerX" id="fUc-rw-pqC"/>
+                    <constraint firstAttribute="bottom" secondItem="b83-lK-m5q" secondAttribute="bottom" constant="11" id="iaG-yz-5NB"/>
+                    <constraint firstItem="77s-ug-Rc7" firstAttribute="centerX" secondItem="Wzm-Fy-3J2" secondAttribute="centerX" id="kmw-6o-5q6"/>
+                    <constraint firstItem="77s-ug-Rc7" firstAttribute="top" secondItem="Wzm-Fy-3J2" secondAttribute="bottom" constant="5" id="lwb-mz-KrZ"/>
+                    <constraint firstItem="b83-lK-m5q" firstAttribute="trailing" secondItem="Wzm-Fy-3J2" secondAttribute="trailing" id="nlc-yq-up4"/>
+                    <constraint firstItem="o3E-yQ-qE1" firstAttribute="centerY" secondItem="eHt-uD-2oI" secondAttribute="centerY" id="u7E-yu-m0R"/>
+                    <constraint firstItem="77s-ug-Rc7" firstAttribute="trailing" secondItem="Wzm-Fy-3J2" secondAttribute="trailing" id="v2G-A8-3as"/>
+                    <constraint firstItem="rcO-Gz-9Q7" firstAttribute="centerY" secondItem="b83-lK-m5q" secondAttribute="centerY" id="yyl-qt-zjb"/>
+                    <constraint firstItem="eHt-uD-2oI" firstAttribute="leading" secondItem="Wzm-Fy-3J2" secondAttribute="leading" id="zxX-Q3-Oh4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="DateLabel" destination="rcO-Gz-9Q7" id="B2d-Bo-nYa"/>
+                <outlet property="addressLabel" destination="o3E-yQ-qE1" id="Ibg-Oi-Gc6"/>
+                <outlet property="buildingLabel" destination="xUE-Tp-s6O" id="dTO-lU-isb"/>
+                <outlet property="centerLabel" destination="OCl-0k-Qk1" id="AJk-gL-x98"/>
+            </connections>
+            <point key="canvasLocation" x="176.81159420289856" y="129.91071428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

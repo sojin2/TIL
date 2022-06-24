@@ -7,30 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		029EE242286541550001E2EA /* LocationListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029EE240286541550001E2EA /* LocationListCell.swift */; };
+		029EE243286541550001E2EA /* LocationListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 029EE241286541550001E2EA /* LocationListCell.xib */; };
+		029EE24528654D860001E2EA /*  Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029EE24428654D860001E2EA /*  Center.swift */; };
+		029EE24728655B4A0001E2EA /* CenterDeatilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029EE24628655B4A0001E2EA /* CenterDeatilViewController.swift */; };
 		02BA4EF22864529300918C5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA4EF12864529300918C5A /* AppDelegate.swift */; };
 		02BA4EF42864529300918C5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA4EF32864529300918C5A /* SceneDelegate.swift */; };
-		02BA4EF62864529300918C5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA4EF52864529300918C5A /* ViewController.swift */; };
+		02BA4EF62864529300918C5A /* CenterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA4EF52864529300918C5A /* CenterListViewController.swift */; };
 		02BA4EF92864529300918C5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02BA4EF72864529300918C5A /* Main.storyboard */; };
 		02BA4EFC2864529300918C5A /* VaccineLocation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02BA4EFA2864529300918C5A /* VaccineLocation.xcdatamodeld */; };
 		02BA4EFE2864529500918C5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02BA4EFD2864529500918C5A /* Assets.xcassets */; };
 		02BA4F012864529500918C5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02BA4EFF2864529500918C5A /* LaunchScreen.storyboard */; };
 		02BA4F0C286459C200918C5A /* VaccineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA4F0B286459C200918C5A /* VaccineViewModel.swift */; };
-		02BA4F0E28645A3200918C5A /*  VaccineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA4F0D28645A3200918C5A /*  VaccineModel.swift */; };
+		02BA4F0E28645A3200918C5A /* CenterVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA4F0D28645A3200918C5A /* CenterVO.swift */; };
 		A36B047CA984C0D77495F383 /* Pods_VaccineLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626647D1AB466F74A8027AE5 /* Pods_VaccineLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		029EE240286541550001E2EA /* LocationListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListCell.swift; sourceTree = "<group>"; };
+		029EE241286541550001E2EA /* LocationListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationListCell.xib; sourceTree = "<group>"; };
+		029EE24428654D860001E2EA /*  Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " Center.swift"; sourceTree = "<group>"; };
+		029EE24628655B4A0001E2EA /* CenterDeatilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterDeatilViewController.swift; sourceTree = "<group>"; };
 		02BA4EEE2864529300918C5A /* VaccineLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VaccineLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02BA4EF12864529300918C5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02BA4EF32864529300918C5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		02BA4EF52864529300918C5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		02BA4EF52864529300918C5A /* CenterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterListViewController.swift; sourceTree = "<group>"; };
 		02BA4EF82864529300918C5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		02BA4EFB2864529300918C5A /* VaccineLocation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VaccineLocation.xcdatamodel; sourceTree = "<group>"; };
 		02BA4EFD2864529500918C5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02BA4F002864529500918C5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02BA4F022864529500918C5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02BA4F0B286459C200918C5A /* VaccineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineViewModel.swift; sourceTree = "<group>"; };
-		02BA4F0D28645A3200918C5A /*  VaccineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " VaccineModel.swift"; sourceTree = "<group>"; };
+		02BA4F0D28645A3200918C5A /* CenterVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterVO.swift; sourceTree = "<group>"; };
 		5E4837489814B834CAA9E967 /* Pods-VaccineLocation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaccineLocation.release.xcconfig"; path = "Target Support Files/Pods-VaccineLocation/Pods-VaccineLocation.release.xcconfig"; sourceTree = "<group>"; };
 		626647D1AB466F74A8027AE5 /* Pods_VaccineLocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VaccineLocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C62403434696731718A70DC3 /* Pods-VaccineLocation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VaccineLocation.debug.xcconfig"; path = "Target Support Files/Pods-VaccineLocation/Pods-VaccineLocation.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +82,8 @@
 				02BA4F09286452A500918C5A /* ViewController */,
 				02BA4EF12864529300918C5A /* AppDelegate.swift */,
 				02BA4EF32864529300918C5A /* SceneDelegate.swift */,
+				029EE240286541550001E2EA /* LocationListCell.swift */,
+				029EE241286541550001E2EA /* LocationListCell.xib */,
 				02BA4EF72864529300918C5A /* Main.storyboard */,
 				02BA4EFD2864529500918C5A /* Assets.xcassets */,
 				02BA4EFF2864529500918C5A /* LaunchScreen.storyboard */,
@@ -86,7 +96,7 @@
 		02BA4F082864529E00918C5A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				02BA4F0D28645A3200918C5A /*  VaccineModel.swift */,
+				02BA4F0D28645A3200918C5A /* CenterVO.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -94,7 +104,8 @@
 		02BA4F09286452A500918C5A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				02BA4EF52864529300918C5A /* ViewController.swift */,
+				02BA4EF52864529300918C5A /* CenterListViewController.swift */,
+				029EE24628655B4A0001E2EA /* CenterDeatilViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -103,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				02BA4F0B286459C200918C5A /* VaccineViewModel.swift */,
+				029EE24428654D860001E2EA /*  Center.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -186,6 +198,7 @@
 			files = (
 				02BA4F012864529500918C5A /* LaunchScreen.storyboard in Resources */,
 				02BA4EFE2864529500918C5A /* Assets.xcassets in Resources */,
+				029EE243286541550001E2EA /* LocationListCell.xib in Resources */,
 				02BA4EF92864529300918C5A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,9 +252,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02BA4EF62864529300918C5A /* ViewController.swift in Sources */,
+				029EE24728655B4A0001E2EA /* CenterDeatilViewController.swift in Sources */,
+				02BA4EF62864529300918C5A /* CenterListViewController.swift in Sources */,
 				02BA4EF22864529300918C5A /* AppDelegate.swift in Sources */,
-				02BA4F0E28645A3200918C5A /*  VaccineModel.swift in Sources */,
+				029EE24528654D860001E2EA /*  Center.swift in Sources */,
+				02BA4F0E28645A3200918C5A /* CenterVO.swift in Sources */,
+				029EE242286541550001E2EA /* LocationListCell.swift in Sources */,
 				02BA4EFC2864529300918C5A /* VaccineLocation.xcdatamodeld in Sources */,
 				02BA4F0C286459C200918C5A /* VaccineViewModel.swift in Sources */,
 				02BA4EF42864529300918C5A /* SceneDelegate.swift in Sources */,
