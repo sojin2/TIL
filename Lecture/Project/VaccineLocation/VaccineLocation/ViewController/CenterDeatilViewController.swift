@@ -8,7 +8,7 @@ import UIKit
 
 
 class CenterDeatilViewController: UIViewController {
-    var centerDetail: CenterDetailVO?
+    var centerDetail: CenterVO.CenterDetailVO?
     
     
     @IBOutlet weak var centerLabel: UILabel!

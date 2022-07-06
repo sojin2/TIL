@@ -10,5 +10,6 @@ pod 'Moya'
 pod 'SnapKit'
 pod 'RxSwift'
 pod 'RxCocoa'
+pod 'ObjectMapper'
 
 end

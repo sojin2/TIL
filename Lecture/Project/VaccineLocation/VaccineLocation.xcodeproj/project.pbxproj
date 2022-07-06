@@ -77,11 +77,11 @@
 		02BA4EF02864529300918C5A /* VaccineLocation */ = {
 			isa = PBXGroup;
 			children = (
+				02BA4EF12864529300918C5A /* AppDelegate.swift */,
+				02BA4EF32864529300918C5A /* SceneDelegate.swift */,
 				02BA4F082864529E00918C5A /* Model */,
 				02BA4F0A286452AE00918C5A /* ViewModel */,
 				02BA4F09286452A500918C5A /* ViewController */,
-				02BA4EF12864529300918C5A /* AppDelegate.swift */,
-				02BA4EF32864529300918C5A /* SceneDelegate.swift */,
 				029EE240286541550001E2EA /* LocationListCell.swift */,
 				029EE241286541550001E2EA /* LocationListCell.xib */,
 				02BA4EF72864529300918C5A /* Main.storyboard */,

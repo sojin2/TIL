@@ -35,8 +35,15 @@ extension Center: TargetType {
     var task: Task {
         switch self {
         case .centerList:
-            let serviceKey:String = "PfLkiRLzxkcn5c4Hs6esI53VS2WPQ9rZqVFiqFkZadLz2xejI5WrnvGiaFLXsxrogUMjylodC34OSNXJnEtaGw%3D%3D"
-            return .requestParameters(parameters: ["page": 1, "perPage": 10, "serviceKey": serviceKey], encoding: URLEncoding.queryString)
+            let serviceKey:String = "PfLkiRLzxkcn5c4Hs6esI53VS2WPQ9rZqVFiqFkZadLz2xejI5WrnvGiaFLXsxrogUMjylodC34OSNXJnEtaGw=="
+            
+            
+            var params: [String: Any] = ["serviceKey" : serviceKey]
+            params["serviceKey"] = serviceKey
+            params["page"] = 1
+            params["perPage"] = 10
+            
+            return .requestParameters(parameters: params, encoding: URLEncoding.queryString)
         }
     }
     

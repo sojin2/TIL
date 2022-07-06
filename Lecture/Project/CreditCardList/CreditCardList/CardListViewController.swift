@@ -17,7 +17,7 @@ class CardListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         //UITableView
         let nibName = UINib(nibName: "CardListCell", bundle: nil)
         tableView.register(nibName, forCellReuseIdentifier: "CardListCell")
@@ -33,6 +33,7 @@ class CardListViewController: UITableViewController {
                 let cardList = Array(cardData.values)
                 self.creditCardList = cardList.sorted { $0.rank < $1.rank }
                 
+                print("###################@@@@@@@@@@@@@@@@@",cardList)
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
