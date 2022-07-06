@@ -22,6 +22,7 @@ class ViewController: UIViewController {
             switch result {
             case let .success(response):
                 let result = try? response.map(Advice.self)
+                print(result)
                 self.adviceLabel.text = result?.slip.advice
             case let .failure(error):
                 print(error.localizedDescription)
