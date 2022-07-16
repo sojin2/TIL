@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0298E713287D0A13008F62ED /* MenuListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0298E712287D0A13008F62ED /* MenuListViewModel.swift */; };
 		02B45437287C1F6800482A12 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B45436287C1F6800482A12 /* Menu.swift */; };
 		A168F0A022F7FB2C00A9E178 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A168F09F22F7FB2C00A9E178 /* AppDelegate.swift */; };
 		A168F0A222F7FB2C00A9E178 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A168F0A122F7FB2C00A9E178 /* MenuViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0298E712287D0A13008F62ED /* MenuListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModel.swift; sourceTree = "<group>"; };
 		02B45436287C1F6800482A12 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		606131A3A3F3F4D6822F8E43 /* Pods-RxSwift+MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift+MVVM.debug.xcconfig"; path = "Target Support Files/Pods-RxSwift+MVVM/Pods-RxSwift+MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		A168F09C22F7FB2C00A9E178 /* RxSwift+MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift+MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +139,7 @@
 		A1869B882360A7810088AA9A /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				02B45436287C1F6800482A12 /* Menu.swift */,
 				A1869B892360A78C0088AA9A /* MenuList */,
 				A1869B8A2360A79F0088AA9A /* Order */,
 			);
@@ -148,7 +151,7 @@
 			children = (
 				A168F0A122F7FB2C00A9E178 /* MenuViewController.swift */,
 				A168F0BB22FAF9B800A9E178 /* MenuItemTableViewCell.swift */,
-				02B45436287C1F6800482A12 /* Menu.swift */,
+				0298E712287D0A13008F62ED /* MenuListViewModel.swift */,
 			);
 			path = MenuList;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				A168F0BC22FAF9B800A9E178 /* MenuItemTableViewCell.swift in Sources */,
 				A168F0A022F7FB2C00A9E178 /* AppDelegate.swift in Sources */,
 				A168F0B822FADE7000A9E178 /* Model.swift in Sources */,
+				0298E713287D0A13008F62ED /* MenuListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
