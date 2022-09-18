@@ -201,6 +201,49 @@ customObservable2().subscribe(onNext: { element in
 
 
 
-// deferred - Observable이 생성되는 시점을 구독자에 의해서 구독되지 전까지 미뤄주는 역할
+// deferred - Observable이 생성되는 시점을 구독자에 의해서 구독되기 전까지 미뤄주는 역할
+// 굳이 구독되기 전에 미리 계산할 필요가 없는 Observable들에 사용 (구독하기도 전에 불필요하게 소요되는 시간 낭비를 줄임)
+
+/*
+// 선언부
+public static func deferred(_ observableFactory: @escaping () throws -> Observable<Element>)
+
+let deferredObservable = Observable<String>.deferred {
+    // 여기에 Observable을 리턴
+}
+*/
+ 
+
+// 사용하기
+
+/* 아래 observable을 미루기
+ 
+let observable = Observable.just("sojin")
+ 
+*/
+ 
+let deferredOb = Observable<String>.deferred {
+    return Observable.just("sojin deferred")
+}
+
+// 구독시 실행
+deferredOb.subscribe(onNext: { element in
+    print(element)
+})
+
+
+// 구현
+let mathObservable = Observable.just(doSomeMath())
+
+func doSomeMath() {
+    print("1 + 1 = 2")
+}
+
+/*
+위치 권한과 같은 가장 최신 상태를 불러올때 사용하면 좋음
+
+무거운 작업의 Observable을 만들어 사용할 때에는 deferred를 이용해서 구독하는 시점과 동시에 작업을 시작할 수 있도록하여 쓸데없는 낭비를 막자
+구독과 동시에 최신값이 필요한 경우 Obserbable을 deferred로 감싸서 사용하도록 한다.
+ */
 
 

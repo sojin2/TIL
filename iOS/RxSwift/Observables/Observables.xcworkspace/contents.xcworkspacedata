@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/kimsojin/TIL/iOS/RxSwift/Observables/Observable.playground">
+      location = "group:Observable.playground">
    </FileRef>
    <FileRef
       location = "group:Observables.xcodeproj">
