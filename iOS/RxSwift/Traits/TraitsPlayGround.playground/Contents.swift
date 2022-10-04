@@ -73,7 +73,6 @@ func maybeObservable() -> Maybe<Any> {
         maybe(.success(<#T##Any#>))
         maybe(.error(<#T##Error#>))
         maybe(.completed)
-        ㄴ
         return Disposables.create()
     }
 }
