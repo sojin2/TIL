@@ -6,34 +6,27 @@
 //
 
 import UIKit
-import CoreData
 import Firebase
-import FirebaseMessaging
 import UserNotifications
+import FirebaseMessaging
+import CoreData
 
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    // Delegate 설정
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
         UNUserNotificationCenter.current().delegate = self
-        
-        // 권한
-        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
-        UNUserNotificationCenter.current().requestAuthorization(options: authOptions) { _, error in
-            if let error = error {
-                print("ERROR|Request Notificattion Authorization : \(error)")
-            }
-        }
-        application.registerForRemoteNotifications()
-        
         return true
     }
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    // Firebase 연결
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
         FirebaseApp.configure()
+        
         // FCM 현재 등록 토큰이나 갱신되는 시점을 알고 적절한 액션 추가 가능
         Messaging.messaging().delegate = self
         
@@ -45,6 +38,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print("FCM 등록토큰: \(token)")
             }
         }
+        
+        // 권한
+        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+        UNUserNotificationCenter.current().requestAuthorization(options: authOptions) { _, error in
+            if let error = error {
+                print("ERROR|Request Notificattion Authorization : \(error)")
+            }
+        }
+        
+        application.registerForRemoteNotifications()
         
         return true
     }
@@ -112,6 +115,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate: UNUserNotificationCenterDelegate {
     
+    // 알림의 Display 형태 설정
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         completionHandler([.list, .banner, .badge, .sound])
     }

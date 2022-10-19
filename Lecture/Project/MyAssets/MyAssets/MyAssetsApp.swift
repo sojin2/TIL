@@ -2,7 +2,7 @@
 //  MyAssetsApp.swift
 //  MyAssets
 //
-//  Created by HelloDigital_iOS_Dev on 2022/06/22.
+//  Created by 김소진 on 2022/10/18.
 //
 
 import SwiftUI
