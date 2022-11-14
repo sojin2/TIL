@@ -13,6 +13,7 @@ func singleObservable() -> Single<Any> {
     }
 }
 
+
 /*
  사용 예시: API request를 통해 하나의 보장된 요소나 에러를 받을 때 유용
 

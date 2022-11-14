@@ -14,6 +14,9 @@ struct AssetView: View {
                 VStack(spacing: 30) {
                     Spacer() // 유연하게 위치 확장
                     AssetMenuGridView()
+                    AssetBannerView().aspectRatio(5/2, contentMode: .fit )
+                    AssetSummaryView().environmentObject(AssetSummaryData())
+                    
                 }
             }
             .background(Color.gray.opacity(0.2))
@@ -27,3 +30,4 @@ struct AssetView_Previews: PreviewProvider {
         AssetView()
     }
 }
+
