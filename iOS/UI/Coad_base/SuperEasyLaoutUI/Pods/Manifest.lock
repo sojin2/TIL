@@ -1,0 +1,16 @@
+PODS:
+  - SuperEasyLayout (0.2.1)
+
+DEPENDENCIES:
+  - SuperEasyLayout
+
+SPEC REPOS:
+  trunk:
+    - SuperEasyLayout
+
+SPEC CHECKSUMS:
+  SuperEasyLayout: d5ec762e3e77c91b5161382f5e61db52ea001850
+
+PODFILE CHECKSUM: ba6d85e34ff85c4ee2763a72684c1fc1f43a19c9
+
+COCOAPODS: 1.11.3
