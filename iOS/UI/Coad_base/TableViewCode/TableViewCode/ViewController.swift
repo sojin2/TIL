@@ -6,60 +6,57 @@
 //
 
 import UIKit
+import SnapKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController {
 
-    // MARK: - Table View 생성
-    // let tableView: UITableView = UITableView()
-    
     private let tableView: UITableView = {
         let tableView = UITableView()
+        tableView.register(CustomCell.self, forCellReuseIdentifier: "CustomCell")
         return tableView
-    }()
-    
-    // MARK: - imageView
-    private let img: UIImageView = {
-        let imgView = UIImageView()
-        imgView.image = UIImage(named: "cat")
-    }()
-    
-    // MARK: - label
-    private let label: UILabel = {
-        let label = UILabel()
-        label.text = "고먐미"
-        label.textColor = UIColor.darkGray
-        return label
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.register(CodeCustomCell.self, forCellReuseIdentifier: "CodeCustomCell")
+        configure()
+        addViews()
+        setConstraint()
         
     }
     
+    func configure() {
+        tableView.backgroundColor = .white
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.rowHeight = 100
+    }
+    
+    
+    func addViews() {
+        view.addSubview(tableView)
+    }
+    
     private func setConstraint() {
-        contentView.addSubview(img)
-        contentView.addSubview(label)
         
-        img.translatesAutoresizingMaskIntoConstraints = false
-        label.translatesAutoresizingMaskIntoConstraints = false
+        tableView.snp.makeConstraints { (make) in
+            make.edges.equalTo(self.view)
+        }
         
-        NSLayoutConstraint.activate([
-            img.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16)
-            img.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10)
-            img.bottomAnchor.
-            
-            
-        ])
     }
 
 }
 
-extension TableViewController: UITableViewDelegate {
+extension ViewController : UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: CustomCell.identifier, for: indexPath) as! CustomCell
+        return cell
+    }
 }
 

@@ -10,22 +10,22 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    private let Titlelabel: UILabel = {
-        let Titlelabel = UILabel()
-        Titlelabel.textColor = .black
-        Titlelabel.font = .preferredFont(forTextStyle: .title1, compatibleWith: .none)
-        Titlelabel.text = "정보 입력"
+    private let titleLabel: UILabel = {
+        let titleLabel = UILabel()
+        titleLabel.textColor = .black
+        titleLabel.font = .preferredFont(forTextStyle: .title1, compatibleWith: .none)
+        titleLabel.text = "정보 입력"
         
-        return Titlelabel
+        return titleLabel
     }()
     
-    private let namelabel: UILabel = {
-        let namelabel = UILabel()
-        namelabel.textColor = .black
-        namelabel.font = .preferredFont(forTextStyle: .body, compatibleWith: .none)
-        namelabel.text = "이름"
+    private let nameLabel: UILabel = {
+        let nameLabel = UILabel()
+        nameLabel.textColor = .black
+        nameLabel.font = .preferredFont(forTextStyle: .body, compatibleWith: .none)
+        nameLabel.text = "이름"
         
-        return namelabel
+        return nameLabel
     }()
     
     private let nameField: UITextField = {
@@ -38,13 +38,13 @@ class MainViewController: UIViewController {
         return nameField
     }()
     
-    private let datelabel: UILabel = {
-        let datelabel = UILabel()
-        datelabel.textColor = .black
-        datelabel.font = .preferredFont(forTextStyle: .body, compatibleWith: .none)
-        datelabel.text = "생년월일"
+    private let dateLabel: UILabel = {
+        let dateLabel = UILabel()
+        dateLabel.textColor = .black
+        dateLabel.font = .preferredFont(forTextStyle: .body, compatibleWith: .none)
+        dateLabel.text = "생년월일"
         
-        return datelabel
+        return dateLabel
     }()
     
     private let datePicker: UIDatePicker = {
@@ -79,10 +79,10 @@ class MainViewController: UIViewController {
     }
     
     func addViews() {
-        view.addSubview(Titlelabel)
-        view.addSubview(namelabel)
+        view.addSubview(titleLabel)
+        view.addSubview(nameLabel)
         view.addSubview(nameField)
-        view.addSubview(datelabel)
+        view.addSubview(dateLabel)
         view.addSubview(datePicker)
         view.addSubview(button)
     }
@@ -92,12 +92,12 @@ class MainViewController: UIViewController {
 
     private func setConstraint() {
 
-        Titlelabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            NSLayoutConstraint(item: Titlelabel, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1.0, constant: 30),
-            NSLayoutConstraint(item: Titlelabel, attribute: .top, relatedBy: .equal, toItem: view, attribute: .topMargin, multiplier: 1.0, constant: 100),
-            NSLayoutConstraint(item: Titlelabel, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1.0, constant: 170),
-            NSLayoutConstraint(item: Titlelabel, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1.0, constant: 80)
+            NSLayoutConstraint(item: titleLabel, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1.0, constant: 30),
+            NSLayoutConstraint(item: titleLabel, attribute: .top, relatedBy: .equal, toItem: view, attribute: .topMargin, multiplier: 1.0, constant: 100),
+            NSLayoutConstraint(item: titleLabel, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1.0, constant: 170),
+            NSLayoutConstraint(item: titleLabel, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1.0, constant: 80)
 
         ])
     }
@@ -144,20 +144,20 @@ class MainViewController: UIViewController {
     
     private func setAnchorConstraint() {
     
-        namelabel.translatesAutoresizingMaskIntoConstraints = false
+        nameLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            namelabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 250),
-            namelabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
-            namelabel.widthAnchor.constraint(equalToConstant: 100),
-            namelabel.heightAnchor.constraint(equalToConstant: 30)
+            nameLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 250),
+            nameLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
+            nameLabel.widthAnchor.constraint(equalToConstant: 100),
+            nameLabel.heightAnchor.constraint(equalToConstant: 30)
         ])
         
-        datelabel.translatesAutoresizingMaskIntoConstraints = false
+        dateLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            datelabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 300),
-            datelabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
-            datelabel.widthAnchor.constraint(equalToConstant: 100),
-            datelabel.heightAnchor.constraint(equalToConstant: 30)
+            dateLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 300),
+            dateLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
+            dateLabel.widthAnchor.constraint(equalToConstant: 100),
+            dateLabel.heightAnchor.constraint(equalToConstant: 30)
         ])
         
         datePicker.translatesAutoresizingMaskIntoConstraints = false

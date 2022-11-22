@@ -68,7 +68,6 @@ class ViewController: UIViewController {
         
         setup()
         setConstraint()
-
     }
     
     func setup() {
