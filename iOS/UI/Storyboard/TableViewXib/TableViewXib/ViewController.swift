@@ -14,27 +14,20 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
+         registerXib()
+    }
+
+    private func registerXib() {
+
         let nibName = UINib(nibName: "CustomCell", bundle: nil)
 
         tableView.register(nibName, forCellReuseIdentifier: "CustomCell")
-        
-        // registerXib()
-    }
 
-//    private func registerXib() {
-//
-//        let nibName = UINib(nibName: "CustomCell", bundle: nil)
-//
-//        tableView.register(nibName, forCellReuseIdentifier: "CustomCell")
-//
-//    }
+    }
 
 }
 
-// catCell
-// CustomCell
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -46,7 +39,5 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomCell
         return cell
     }
-
-    
 }
 

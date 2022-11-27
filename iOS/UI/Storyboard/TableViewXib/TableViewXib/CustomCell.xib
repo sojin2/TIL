@@ -41,8 +41,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="catImage" destination="XI5-ZJ-KIt" id="74q-br-kon"/>
-                <outlet property="catLabel" destination="WUf-Bb-1p9" id="jj6-4r-ylQ"/>
+                <outlet property="catImage" destination="XI5-ZJ-KIt" id="cTm-zv-QZB"/>
+                <outlet property="catLabel" destination="WUf-Bb-1p9" id="UoR-hW-9B9"/>
             </connections>
             <point key="canvasLocation" x="-32.824427480916029" y="32.394366197183103"/>
         </tableViewCell>

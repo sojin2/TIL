@@ -35,7 +35,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="svY-mn-xck" id="Uiu-cI-irW"/>
+                        <outlet property="tableView" destination="svY-mn-xck" id="r2p-1e-68T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
