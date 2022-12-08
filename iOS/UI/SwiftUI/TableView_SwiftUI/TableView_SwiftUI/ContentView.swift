@@ -6,23 +6,31 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct ContentView: View {
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Turtle Rock")
-                .font(.title)
-            HStack {
-                Text("Joshua Tree National Park")
-                    .font(.subheadline)
-                Text("California")
-                Spacer()
-                    .font(.subheadline)
+        NavigationView {
+            List {
+                Section(header: Text("귀여운 고양이 Section")) {
+                    CustomCat(cellNum: 1)
+                    CustomCat(cellNum: 2)
+                    CustomCat(cellNum: 3)
+                }
+                Section(header: Text("Second section"),
+                        footer: FooterView()) {
+                    NavigationLink(destination: ArratList()) {
+                        Text("친구들")
+                    }
+                }
             }
+            .listStyle(.insetGrouped)
+            .navigationTitle("List")
+            
         }
-        .padding()
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
