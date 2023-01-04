@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A56DE6A1477994634BC02185 /* Pods_Api_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E81AE8CC1DEC3AB18D0556FF /* Pods_Api_Test.framework */; };
+		AA4282B22965431F0083FF93 /* AccountTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4282B12965431F0083FF93 /* AccountTarget.swift */; };
+		AA4282B7296544A60083FF93 /* PhoneRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4282B6296544A60083FF93 /* PhoneRequest.swift */; };
 		AAEF33B12963F97B0065C04E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEF33B02963F97B0065C04E /* AppDelegate.swift */; };
 		AAEF33B32963F97B0065C04E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEF33B22963F97B0065C04E /* SceneDelegate.swift */; };
 		AAEF33B52963F97B0065C04E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEF33B42963F97B0065C04E /* ViewController.swift */; };
@@ -16,12 +18,13 @@
 		AAEF33BD2963F97C0065C04E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAEF33BB2963F97C0065C04E /* LaunchScreen.storyboard */; };
 		AAEF33C6296413AE0065C04E /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEF33C5296413AE0065C04E /* TargetType.swift */; };
 		AAEF33CB296429010065C04E /* HTTPHeaderField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEF33CA296429010065C04E /* HTTPHeaderField.swift */; };
-		AAEF33CD29642FAB0065C04E /* MyRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEF33CC29642FAB0065C04E /* MyRequestInterceptor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C12665EA26A465EA11FE6D5 /* Pods-Api_Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Api_Test.release.xcconfig"; path = "Target Support Files/Pods-Api_Test/Pods-Api_Test.release.xcconfig"; sourceTree = "<group>"; };
 		86BB2CBFC849C7126E57750F /* Pods-Api_Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Api_Test.debug.xcconfig"; path = "Target Support Files/Pods-Api_Test/Pods-Api_Test.debug.xcconfig"; sourceTree = "<group>"; };
+		AA4282B12965431F0083FF93 /* AccountTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTarget.swift; sourceTree = "<group>"; };
+		AA4282B6296544A60083FF93 /* PhoneRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneRequest.swift; sourceTree = "<group>"; };
 		AAEF33AD2963F97B0065C04E /* Api_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Api_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAEF33B02963F97B0065C04E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAEF33B22963F97B0065C04E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,7 +35,6 @@
 		AAEF33BE2963F97C0065C04E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAEF33C5296413AE0065C04E /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		AAEF33CA296429010065C04E /* HTTPHeaderField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaderField.swift; sourceTree = "<group>"; };
-		AAEF33CC29642FAB0065C04E /* MyRequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRequestInterceptor.swift; sourceTree = "<group>"; };
 		E81AE8CC1DEC3AB18D0556FF /* Pods_Api_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Api_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -54,6 +56,14 @@
 				E81AE8CC1DEC3AB18D0556FF /* Pods_Api_Test.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA4282B3296543460083FF93 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA4282B6296544A60083FF93 /* PhoneRequest.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		AAEF33A42963F97B0065C04E = {
@@ -104,7 +114,6 @@
 			children = (
 				AAEF33C5296413AE0065C04E /* TargetType.swift */,
 				AAEF33CA296429010065C04E /* HTTPHeaderField.swift */,
-				AAEF33CC29642FAB0065C04E /* MyRequestInterceptor.swift */,
 			);
 			path = Bases;
 			sourceTree = "<group>";
@@ -119,6 +128,8 @@
 		AAEF33C9296413F10065C04E /* APIs */ = {
 			isa = PBXGroup;
 			children = (
+				AA4282B12965431F0083FF93 /* AccountTarget.swift */,
+				AA4282B3296543460083FF93 /* Models */,
 			);
 			path = APIs;
 			sourceTree = "<group>";
@@ -250,8 +261,9 @@
 				AAEF33B52963F97B0065C04E /* ViewController.swift in Sources */,
 				AAEF33CB296429010065C04E /* HTTPHeaderField.swift in Sources */,
 				AAEF33B12963F97B0065C04E /* AppDelegate.swift in Sources */,
-				AAEF33CD29642FAB0065C04E /* MyRequestInterceptor.swift in Sources */,
+				AA4282B7296544A60083FF93 /* PhoneRequest.swift in Sources */,
 				AAEF33B32963F97B0065C04E /* SceneDelegate.swift in Sources */,
+				AA4282B22965431F0083FF93 /* AccountTarget.swift in Sources */,
 				AAEF33C6296413AE0065C04E /* TargetType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
