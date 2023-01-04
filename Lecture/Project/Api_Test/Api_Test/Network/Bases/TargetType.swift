@@ -16,7 +16,7 @@ protocol TargetType: URLRequestConvertible {
     var method: HTTPMethod { get }
     var header: HTTPHeaders { get }
     var path: String { get }
-    var parameters: RequestParams { get }
+    var parameters: RequestParams? { get }
     var encoding: ParameterEncoding { get }
 }
 

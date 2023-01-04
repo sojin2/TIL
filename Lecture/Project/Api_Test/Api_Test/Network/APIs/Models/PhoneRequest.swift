@@ -7,6 +7,6 @@
 
 import Foundation
  
-struct PhoneRequest: Decodable {
+struct PhoneRequest: Codable {
 
 }
