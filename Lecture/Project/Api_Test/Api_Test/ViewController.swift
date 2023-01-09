@@ -9,22 +9,30 @@ import UIKit
 import Alamofire
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var button: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        Phone {succeed, failed in
+        }
         
+        func Phone(completion: @escaping (_ succeed: PhoneModel?, _ failed: Error?) -> Void) {
+            API.session.request(APIBase.getPhone)
+                .responseDecodable { (response: AFDataResponse<PhoneModel>) in
+                    switch response.result {
+                    case .success(let response):
+                        print("성공임 ㅎㅅㅎ")
+                        print(response)
+                        completion(response, nil)
+                    case .failure(let error):
+                        print("실패임 ㅜ.ㅜ")
+                        print(error)
+                        completion(nil, error)
+                    }
+                }
+        }
     }
     
-    func getTest() {
-        let url = "https://www.odigo.ai/v2/api/accounts/phone/01082592164"
-        let header: HTTPHeaders = [
-            "Content-Type": "application/json",
-            "Accept": "application/json"
-        ]
-        let request = AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header)
-            .validate(statusCode: 200..<500)
-            .responseDecodable(completionHandler: <#T##(DataResponse<Decodable, AFError>) -> Void#>)
-
-
 }
 

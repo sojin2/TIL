@@ -9,14 +9,13 @@ import Foundation
 import Alamofire
 
 
-enum AccountTarget {
-    case getPhone(PhoneRequest)
+enum APIBase {
+    case getPhone
+    case putPassword
 }
 
-// https://www.odigo.ai/api/accounts/phone/01082592164
-
-extension AccountTarget: TargetType {
-
+extension APIBase: TargetType {
+    
     
     var baseURL: String {
         return "https://www.odigo.ai"
@@ -33,6 +32,8 @@ extension AccountTarget: TargetType {
         switch self {
         case .getPhone:
             return .get
+        case .putPassword:
+            return .put
         }
     }
     
@@ -40,18 +41,24 @@ extension AccountTarget: TargetType {
         switch self {
         case .getPhone:
             return "/api/accounts/phone/01082592164"
+        case .putPassword:
+            return "/api/users/password"
         }
     }
     
     var parameters: RequestParams? {
         switch self {
         case .getPhone: return nil
+        case .putPassword:
+            return .query(["type": "ios", "code": Saved.push])
         }
     }
     
     var encoding: ParameterEncoding {
         switch self {
         case .getPhone:
+            return URLEncoding.self as! ParameterEncoding
+        case .putPassword:
             return JSONEncoding.default
         }
     }

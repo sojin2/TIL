@@ -40,9 +40,9 @@ extension TargetType {
             let params = request?.toDictionary() ?? [:]
             urlRequest.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
             return try encoding.encode(urlRequest, with: params)
+        case .none:
+            return urlRequest
         }
-
-        return urlRequest
     }
 }
 
@@ -59,6 +59,3 @@ extension Encodable {
         return dictionaryData
     }
 }
-
-
-//RequestParams에서 알 수 있듯이, 모든 parameter들은 Encodable을 준수하는 struct를 받도록 설계했으므로, Encodable을 extension으로 toDictionary() 메소드도 정의
