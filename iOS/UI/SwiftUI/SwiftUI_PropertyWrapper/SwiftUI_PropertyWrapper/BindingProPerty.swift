@@ -1,20 +1,42 @@
 //
-//  BindingProPerty.swift
+//  BindingProperty.swift
 //  SwiftUI_PropertyWrapper
 //
-//  Created by 김소진 on 2022/12/11.
+//  Created by 김소진 on 2022/12/09.
 //
 
 import SwiftUI
 
-struct BindingProPerty: View {
+
+// MARK: - @ObservedObject
+class UserProgress: ObservableObject {
+    @Published var score = 0
+}
+
+struct InnerView: View {
+    @ObservedObject var progress: UserProgress
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button("Increase Score") {
+            progress.score += 1
+        }.buttonStyle(.bordered)
     }
 }
 
-struct BindingProPerty_Previews: PreviewProvider {
+
+struct ProgressView: View {
+    @StateObject var progress = UserProgress()
+    
+    var body: some View {
+        VStack {
+            Text("Your score is \(progress.score)")
+            InnerView(progress: progress)
+        }
+    }
+}
+
+struct BindingProperty_Previews: PreviewProvider {
     static var previews: some View {
-        BindingProPerty()
+        ProgressView()
     }
 }

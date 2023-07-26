@@ -8,5 +8,6 @@ target 'Api_Test' do
   # Pods for Api_Test
 
 pod 'Alamofire'
+pod 'RxSwift'
 
 end
