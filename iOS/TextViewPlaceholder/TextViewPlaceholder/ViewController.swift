@@ -14,15 +14,13 @@ class ViewController: UIViewController {
     private let textView = UITextView().then {
         $0.layer.borderWidth = 1
         $0.layer.borderColor = UIColor.black.cgColor
+        $0.text = "메세지를 입력하세요"
+        $0.textColor = UIColor.lightGray
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         textView.delegate = self
-        if textView.text.isEmpty {
-            textView.text = "메세지를 입력하세요"
-            textView.textColor = UIColor.lightGray
-        }
         setup()
     }
 
@@ -37,7 +35,7 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UITextViewDelegate {
-
+    
     func textViewDidBeginEditing(_ textView: UITextView) {
         if textView.textColor == UIColor.lightGray {
             textView.text = nil
