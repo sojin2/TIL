@@ -1,0 +1,6 @@
+framework module Pods_MoyaAPI {
+  umbrella header "Pods-MoyaAPI-umbrella.h"
+
+  export *
+  module * { export * }
+}

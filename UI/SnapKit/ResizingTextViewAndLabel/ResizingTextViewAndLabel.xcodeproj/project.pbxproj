@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA72554E2A90B05E009C42ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA72554D2A90B05E009C42ED /* AppDelegate.swift */; };
+		AA7255502A90B05E009C42ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA72554F2A90B05E009C42ED /* SceneDelegate.swift */; };
+		AA7255522A90B05E009C42ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7255512A90B05E009C42ED /* ViewController.swift */; };
+		AA7255552A90B05E009C42ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7255532A90B05E009C42ED /* Main.storyboard */; };
+		AA7255572A90B05F009C42ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA7255562A90B05F009C42ED /* Assets.xcassets */; };
+		AA72555A2A90B05F009C42ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7255582A90B05F009C42ED /* LaunchScreen.storyboard */; };
+		AADC83792AA6C05A00AD1D87 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADC83782AA6C05A00AD1D87 /* Font.swift */; };
+		FA0C7778B9868BE241C135F9 /* Pods_ResizingTextViewAndLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BED9E4B85EB90251B856EE /* Pods_ResizingTextViewAndLabel.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C2A10DF8177A1C0F32813EA /* Pods-ResizingTextViewAndLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResizingTextViewAndLabel.debug.xcconfig"; path = "Target Support Files/Pods-ResizingTextViewAndLabel/Pods-ResizingTextViewAndLabel.debug.xcconfig"; sourceTree = "<group>"; };
+		308F64890F9E1271049E04D2 /* Pods-ResizingTextViewAndLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ResizingTextViewAndLabel.release.xcconfig"; path = "Target Support Files/Pods-ResizingTextViewAndLabel/Pods-ResizingTextViewAndLabel.release.xcconfig"; sourceTree = "<group>"; };
+		77BED9E4B85EB90251B856EE /* Pods_ResizingTextViewAndLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ResizingTextViewAndLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA72554A2A90B05E009C42ED /* ResizingTextViewAndLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResizingTextViewAndLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA72554D2A90B05E009C42ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA72554F2A90B05E009C42ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AA7255512A90B05E009C42ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA7255542A90B05E009C42ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA7255562A90B05F009C42ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA7255592A90B05F009C42ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA72555B2A90B05F009C42ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AADC83782AA6C05A00AD1D87 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Font.swift; path = ../../PopupView/PopupView/Font.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA7255472A90B05E009C42ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA0C7778B9868BE241C135F9 /* Pods_ResizingTextViewAndLabel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA7255412A90B05E009C42ED = {
+			isa = PBXGroup;
+			children = (
+				AA72554C2A90B05E009C42ED /* ResizingTextViewAndLabel */,
+				AA72554B2A90B05E009C42ED /* Products */,
+				CEAD84915D039C96899B0CF9 /* Pods */,
+				C5A15266C44368964CE62D21 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AA72554B2A90B05E009C42ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA72554A2A90B05E009C42ED /* ResizingTextViewAndLabel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA72554C2A90B05E009C42ED /* ResizingTextViewAndLabel */ = {
+			isa = PBXGroup;
+			children = (
+				AA72554D2A90B05E009C42ED /* AppDelegate.swift */,
+				AA72554F2A90B05E009C42ED /* SceneDelegate.swift */,
+				AA7255512A90B05E009C42ED /* ViewController.swift */,
+				AADC83782AA6C05A00AD1D87 /* Font.swift */,
+				AA7255532A90B05E009C42ED /* Main.storyboard */,
+				AA7255562A90B05F009C42ED /* Assets.xcassets */,
+				AA7255582A90B05F009C42ED /* LaunchScreen.storyboard */,
+				AA72555B2A90B05F009C42ED /* Info.plist */,
+			);
+			path = ResizingTextViewAndLabel;
+			sourceTree = "<group>";
+		};
+		C5A15266C44368964CE62D21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77BED9E4B85EB90251B856EE /* Pods_ResizingTextViewAndLabel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEAD84915D039C96899B0CF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C2A10DF8177A1C0F32813EA /* Pods-ResizingTextViewAndLabel.debug.xcconfig */,
+				308F64890F9E1271049E04D2 /* Pods-ResizingTextViewAndLabel.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA7255492A90B05E009C42ED /* ResizingTextViewAndLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA72555E2A90B05F009C42ED /* Build configuration list for PBXNativeTarget "ResizingTextViewAndLabel" */;
+			buildPhases = (
+				31060E5F156743822C6D7E4A /* [CP] Check Pods Manifest.lock */,
+				AA7255462A90B05E009C42ED /* Sources */,
+				AA7255472A90B05E009C42ED /* Frameworks */,
+				AA7255482A90B05E009C42ED /* Resources */,
+				5CBB87FEF11EA64E0CEBAE84 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ResizingTextViewAndLabel;
+			productName = ResizingTextViewAndLabel;
+			productReference = AA72554A2A90B05E009C42ED /* ResizingTextViewAndLabel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA7255422A90B05E009C42ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					AA7255492A90B05E009C42ED = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = AA7255452A90B05E009C42ED /* Build configuration list for PBXProject "ResizingTextViewAndLabel" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA7255412A90B05E009C42ED;
+			productRefGroup = AA72554B2A90B05E009C42ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA7255492A90B05E009C42ED /* ResizingTextViewAndLabel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA7255482A90B05E009C42ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA72555A2A90B05F009C42ED /* LaunchScreen.storyboard in Resources */,
+				AA7255572A90B05F009C42ED /* Assets.xcassets in Resources */,
+				AA7255552A90B05E009C42ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31060E5F156743822C6D7E4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ResizingTextViewAndLabel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CBB87FEF11EA64E0CEBAE84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ResizingTextViewAndLabel/Pods-ResizingTextViewAndLabel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ResizingTextViewAndLabel/Pods-ResizingTextViewAndLabel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ResizingTextViewAndLabel/Pods-ResizingTextViewAndLabel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA7255462A90B05E009C42ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AADC83792AA6C05A00AD1D87 /* Font.swift in Sources */,
+				AA7255522A90B05E009C42ED /* ViewController.swift in Sources */,
+				AA72554E2A90B05E009C42ED /* AppDelegate.swift in Sources */,
+				AA7255502A90B05E009C42ED /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA7255532A90B05E009C42ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA7255542A90B05E009C42ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA7255582A90B05F009C42ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA7255592A90B05F009C42ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA72555C2A90B05F009C42ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA72555D2A90B05F009C42ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA72555F2A90B05F009C42ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C2A10DF8177A1C0F32813EA /* Pods-ResizingTextViewAndLabel.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24489HL9PA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ResizingTextViewAndLabel/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.soo.ResizingTextViewAndLabel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA7255602A90B05F009C42ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 308F64890F9E1271049E04D2 /* Pods-ResizingTextViewAndLabel.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24489HL9PA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ResizingTextViewAndLabel/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.soo.ResizingTextViewAndLabel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA7255452A90B05E009C42ED /* Build configuration list for PBXProject "ResizingTextViewAndLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA72555C2A90B05F009C42ED /* Debug */,
+				AA72555D2A90B05F009C42ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA72555E2A90B05F009C42ED /* Build configuration list for PBXNativeTarget "ResizingTextViewAndLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA72555F2A90B05F009C42ED /* Debug */,
+				AA7255602A90B05F009C42ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA7255422A90B05E009C42ED /* Project object */;
+}
